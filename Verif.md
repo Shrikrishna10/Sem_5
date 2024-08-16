@@ -8,19 +8,23 @@ There are 3 directions in SV they are input output and inout
 
 ## Bit
 Eg:
+```verilog
 module y1;
 bit y;     -> this is called a scalar bit notation  
 $display(y);
 in the bit declaration we can use square brackets to make it an array of bits in this format:
 bit [2:0]y; / bit [0:2]y; / bit [3]y;
 - It can take signed and unsigned values. By default it is unsigned
+```
 
 ## Byte 
 Eg:
+
+```verilog
 module y2;
 byte y; -> this is the sames as saying bit [7:0] y;
 $display(y);
-
+```
 ## Other data types are:
 - short int [16-bits]
 - int [32-bits] 
@@ -52,6 +56,8 @@ it can be used in the procedural blocks
 - [ ] Nominal Mapping- .clk(clk)
 - [ ] Positional Mapping- 
 - Eg:
+```verilog
+
   module adder (x,y,z,t);
   input logic x,y;
   output logic z,t;
@@ -63,7 +69,7 @@ it can be used in the procedural blocks
   output logic r,s;
   adder a1(p,q,r,s); -> this is nominal mapping
   adder a2(.q(y), .p(x), .s(t), .r(z)); -> this is positional Mapping
-  
+```  
   
 ### UDP and Built-in primitive 
 
@@ -83,11 +89,12 @@ it can be used in the procedural blocks
 | this block is ==always== scheduled to be  executed at runtime 0 | this block always depends on the event occurring to execute |
 
 Eg:
+```verilog
 always
 begin
 y=a+b;
 end
-
+```
 
 # Array
 https://www.edaplayground.com/x/qAKd
@@ -111,32 +118,32 @@ Sample Code:
 
 `bit b_packed [7:0]  [4]`;  -> this is a multidimensional array
 the above is an unpacked array of 4 elements with each element of 8 bits
-
-`module test;
-`integer arr1[3:0];
-`integer arr2[3:0];
-`integer arr3[3:0];
-`integer arr4[3:0];
-`integer arr5[3:0];
-`integer arr6[3:0];
-`integer mda [5:0]  [3:0];`
-`integer i,j;`
-`initial`
-`begin`
-`for (i=0; i < 4; i = i+1)`
-`begin`
-`arr1[i] = 5;`
-`$display ("arr[%0d] = %0d", i, arr1[i]);`
-`end`
-`for (i=0; i < 6; i = i+1)`
-`for (j=0; j < 4; j = j+1)`
-`begin`
-`mda [i] [j] = $random;`
-`$display("mda[%0d][%0d] = %0d",i,j,mda[i][j]);`
-`end`
-`end`
-`endmodule`
-
+```verilog
+module test;
+integer arr1[3:0];
+integer arr2[3:0];
+integer arr3[3:0];
+integer arr4[3:0];
+integer arr5[3:0];
+integer arr6[3:0];
+integer mda [5:0]  [3:0];
+integer i,j;
+initial
+begin
+for (i=0; i < 4; i = i+1)
+begin
+arr1[i] = 5;
+$display ("arr[%0d] = %0d", i, arr1[i]);
+end
+for (i=0; i < 6; i = i+1)
+for (j=0; j < 4; j = j+1)
+begin
+mda [i] [j] = $random;
+$display("mda[%0d][%0d] = %0d",i,j,mda[i][j]);
+end
+end
+endmodule
+```
 
 ## Initialising an array
 Initialising at declaration 
@@ -148,6 +155,7 @@ string str4 [4] = '{"hey", "this", "is", "sample"}
 - it is possible to splice the array
 Data is stored as a contiguous set of bits with no unused space.
 ***==Packed Array is accessed as a array and as a single vectors==***
+
 
 
 # Types of Arrays
@@ -304,4 +312,114 @@ when deleting in associative we need to give the correct index that we wish to d
 ## Methods in Associative Array
 .size  -> gives the size of the array
 .delete() -> removes the specified index in the parenthesis from the array 
-.exist() -> checks if the index that is there in the parenthesis is there in the array or not  
+.exist() -> checks if the index that is there in the parenthesis is there in the array or not 
+.first() -> this assigns which index will be the 1st element of the array
+.next() -> 
+
+# Queue
+A queue is a variable-size, ordered collection of homogeneous elements.
+-  like a dynamic array, queues can grow and shrink
+- queue supports adding and removing data
+```verilog
+`bit queue_1[$];`
+`int queue_2[$];`
+`byte queue_3[$: 255];` -> queue of byte bounded with 256 entries
+`string queue_4[$];`
+```
+
+## Queue Methods
+.push_front() -> inserts element at the front of the queue
+.push_back() -> inserts element at the back of the queue
+.pop_front() -> removes & returns the 1st element
+.pop_back() -> removes & returns the last element
+.insert(index, data) -> the data can be another queue 
+
+# Array Methods
+There are many array methods that you can use on unpacked array
+
+## Array reduction methods
+A basic array reduction method takes an array and reduces it to a single value.
+
+- .sum() -> adds all the elements in the array 
+- .product() -> multiplies all the elements in the array 
+- .and() -> performs an & operation on all the elements in the array
+- .average ->
+- .sub -> subtracts all the elements in the array
+
+## Array locator Methods
+-helps find say the largest values, smallest values or unique values.
+
+ - .min -> smallest value is assigned somewhere
+ - .max -> largest value is assigned somewhere
+ - .unique -> this displays values only once or assigns it somewhere 
+
+we can also perform some search operations
+- .find_index with () 
+- .find_first with ()
+- .find_first_index with ()
+- .find_last with ()
+- .find_last_index with () 
+-the parenthesis contains a argument which will be acting like the condition statement like less than this value or a specific value or something like that.
+the different syntax's for the above are:
+tq = d.find_first(item) with (item == 4)
+
+- .shuffle()
+- .sort()
+- .rsort()
+- .reverse()
+
+# Typedef & Structures
+## Typedef
+User defined Data-types
+Verilog doesn't allow users to define new data types
+SystemVerilog provides a method to define new data types using typedef.
+
+```verilog
+typedef int unsigned uint;
+unit a,b; // varibles a & b are of the user defined data type unit
+```
+
+```verilog
+typedef bit[32] bit32;
+bit32 data1, data2; //variables data1 & data2 are of the user defined data type bit32
+```
+
+Parameterised typedef
+```verilog 
+parameter OPSIZE = 8;
+typedef logic [OPSIZE-1:0] opreg_t;
+
+opreg_t op_a,op_b; // variables op_a & op_b are of the user defined data type opreg_t
+```
+
+### Parameter vs Constant
+values can be changed in parameter to some extent but not in constant
+
+
+User-Defined type in SystemVerilog
+
+>[!Question]
+>**Create the SystemVerilog code for the following requirements**
+> - Create a user-defined type, nibble, of 4-bits
+> - Create a real variable, r, & initialise it to 4.33
+> - Create a short int variable, i_pack
+> - Create an unpacked array, k, containing 4 elements of your user defined type nibble and initialise it to 4'h0, 4'hF, 4'hE & 4'hD
+> - Print out k
+> ```verilog
+> 	module test;
+> 	typedef bit[4] nibble;
+> 	real r= 4.33;
+> 	short int i_pack;
+> 	bit k [4];
+> 	assign k[0] =4'h0;
+> 	assign k[1] =4'hF;
+> 	assign k[2] =4'hE;
+> 	assign k[3] =4'hD;
+> 	int i;
+> 	for(i=0; i < 4 ;i++)
+> 	begin
+> 		$display("the values =%0d, %0h", i, k[i]);
+> 	end
+> 	endmodule
+> ``` 
+
