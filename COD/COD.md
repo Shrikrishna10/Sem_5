@@ -43,6 +43,8 @@ in the store instruction the destination operand is a data memory
 	- Function arguments/ Return values 
 	- Pointers: Stack, Global, Thread.
 
+**RV32 & RV64 both have the same number of instructions, the difference lies in the size of the registers**
+
 
 
 -Why can't you have more number of registers? Why is there a limited number of registers?\
@@ -136,3 +138,16 @@ I can call an instruction of I-type if & only if it has
 as its operands.
 *Eg:* `addi rd, rs1, imm`
 There is no exclusive subi instruction in riscv 
+
+# Representing Instructions in the Computer
+## How do we represent Instructions?
+- An assembler string like "add x10, x11, ,x12" is meaningless to hw as hw can understand only machine code
+-Risc-v seeks simplicity: Since data is in words, make instructions of the same 32-bit words. Risc-v seeks simplicity, so define 6 basic types of instructions formats.
+	- R-format: For register- register arithmetic operations
+	- I-format: For register-immediate arithmetic operations & loads
+	- S-format: For stores
+	- B-format: for branches (a minor variant of U-format)
+	- U-format:
+	- J-format:
+There is a sort of symmetry or regularity maintained in these formats;
+the op code field is fixed and is always present 
