@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e3a72695a2b613a7",
+        "id": "c28a26c13c9f1e24",
         "type": "tabs",
         "children": [
           {
-            "id": "33d8745ee2c1dad6",
+            "id": "c1611b8047472a02",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "RISC-V.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "RISC-V.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "RISC-V.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "RISC-V.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -147,12 +139,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "33d8745ee2c1dad6",
+  "active": "c1611b8047472a02",
   "lastOpenFiles": [
+    "Verif_elective2/notes/Verif.md",
+    "Verif_elective2/notes",
+    "CCN/resources_from_prof/Unit 1/Unit_1_CLASS_2_Network_edge.pdf",
+    "CCN/resources_from_prof/Unit 1/CLASS 12- Principles of network applications.pdf",
+    "CCN/resources_from_prof/Unit 1/Classes 4 & 5 - Delay, Loss, and Throughput in Packet-Switched Networks.pdf",
+    "CCN/resources_from_prof/Unit 1/Class 3 - Network Core.pdf",
+    "CCN/resources_from_prof/Unit 1/Class 10 Numerical Problems.pdf",
+    "CCN/resources_from_prof/Unit 1/Class 1 Internet - Introduction & Terminology.pdf",
+    "CCN/resources_from_prof/Unit 1/CLASS 6 - Numericals on Delay, Loss, and Throughput.pdf",
+    "CCN/resources_from_prof/Unit 1/CLASS 14- Web and HTTP Message formats.pdf",
+    "CCN/resources_from_prof/Unit 1/CLASS 13- Web and HTTP- Overview, Non-persistent and Persistent.pdf",
+    "COD/lab/Lab1/LAB_01_COD.md",
+    "CCN/lab/Lab1/CCN_Lab_1.md",
+    "CCN/lab/Lab0/LAB 0.md",
+    "CCN/lab/screenshots/Screenshot from 2024-08-13 14-18-15.png",
+    "CCN/lab/screenshots/Screenshot from 2024-08-13 14-08-44.png",
+    "Verif_elective2/Verif.md",
+    "RISC-V.md",
+    "selflearning/RISC-V.md",
+    "CCN/lab/CCN_Lab_1.md",
+    "CCN/lab/LAB 0.md",
+    "COD/lab/LAB_01_COD.md",
+    "COD/notes/9-08-24 The Processor.md",
+    "COD/notes/Computer Organisation and Design.md",
+    "COD/notes/COD.md",
     "COD/COD.md",
     "Verif.md",
-    "RISC-V.md",
-    "COD/simple_add.s",
     "COD/Computer Organisation and Design.md"
   ]
 }
