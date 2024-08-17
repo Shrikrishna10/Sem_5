@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COD/COD.md",
+                "file": "RISC-V.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COD/COD.md",
+                "file": "RISC-V.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COD/COD.md",
+                "file": "RISC-V.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COD/COD.md"
+                "file": "RISC-V.md"
               }
             }
           }
@@ -149,9 +149,9 @@
   },
   "active": "33d8745ee2c1dad6",
   "lastOpenFiles": [
+    "COD/COD.md",
     "Verif.md",
     "RISC-V.md",
-    "COD/COD.md",
     "COD/simple_add.s",
     "COD/Computer Organisation and Design.md"
   ]
