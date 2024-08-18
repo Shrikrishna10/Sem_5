@@ -11,8 +11,12 @@
             "id": "c1611b8047472a02",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "selflearning/RISC-V.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -82,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "selflearning/RISC-V.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "selflearning/RISC-V.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "selflearning/RISC-V.md"
+              }
             }
           }
         ]
@@ -141,6 +149,10 @@
   },
   "active": "c1611b8047472a02",
   "lastOpenFiles": [
+    "Pasted image 20240818083115.png",
+    "Pasted image 20240818071706.png",
+    "Pasted image 20240818071701.png",
+    "COD/notes/COD.md",
     "Verif_elective2/notes/Verif.md",
     "Verif_elective2/notes",
     "CCN/resources_from_prof/Unit 1/Unit_1_CLASS_2_Network_edge.pdf",
@@ -165,7 +177,6 @@
     "COD/lab/LAB_01_COD.md",
     "COD/notes/9-08-24 The Processor.md",
     "COD/notes/Computer Organisation and Design.md",
-    "COD/notes/COD.md",
     "COD/COD.md",
     "Verif.md",
     "COD/Computer Organisation and Design.md"
