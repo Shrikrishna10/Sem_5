@@ -1,13 +1,4 @@
 {
-  "editor:toggle-code": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "`"
-    }
-  ],
   "editor:toggle-source": [
     {
       "modifiers": [
@@ -15,6 +6,14 @@
         "Shift"
       ],
       "key": "Enter"
+    }
+  ],
+  "editor:toggle-code": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "`"
     }
   ]
 }

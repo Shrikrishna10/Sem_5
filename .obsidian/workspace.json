@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c28a26c13c9f1e24",
+        "id": "b684298c89e7620c",
         "type": "tabs",
         "children": [
           {
-            "id": "c1611b8047472a02",
+            "id": "9ec0eb75608f7eb8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "selflearning/RISC-V.md",
+                "file": "COD/notes/COD.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "selflearning/RISC-V.md",
+                "file": "COD/notes/COD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "selflearning/RISC-V.md",
+                "file": "COD/notes/COD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "selflearning/RISC-V.md"
+                "file": "COD/notes/COD.md"
               }
             }
           }
@@ -147,13 +147,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c1611b8047472a02",
+  "active": "9ec0eb75608f7eb8",
   "lastOpenFiles": [
+    "COD/notes/COD.md",
+    "selflearning/RISC-V.md",
     "Pasted image 20240818191141.png",
     "Pasted image 20240818083115.png",
     "Pasted image 20240818071706.png",
     "Pasted image 20240818071701.png",
-    "COD/notes/COD.md",
     "Verif_elective2/notes/Verif.md",
     "Verif_elective2/notes",
     "CCN/resources_from_prof/Unit 1/Unit_1_CLASS_2_Network_edge.pdf",
@@ -172,7 +173,6 @@
     "CCN/lab/screenshots/Screenshot from 2024-08-13 14-08-44.png",
     "Verif_elective2/Verif.md",
     "RISC-V.md",
-    "selflearning/RISC-V.md",
     "CCN/lab/CCN_Lab_1.md",
     "CCN/lab/LAB 0.md",
     "COD/lab/LAB_01_COD.md",

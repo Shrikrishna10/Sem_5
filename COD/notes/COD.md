@@ -150,3 +150,4 @@ There is no exclusive subi instruction in riscv
 	- J-format:
 There is a sort of symmetry or regularity maintained in these formats;
 the op code field is fixed and is always present 
+
