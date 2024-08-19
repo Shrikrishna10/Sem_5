@@ -1,3 +1,6 @@
+# Resources
+https://trainingportal.linuxfoundation.org/courses/introduction-to-risc-v-lfd110
+https://projectf.io/postas/riscv-cheat-sheet/
 # Naming convention for RISC-V
 
 ## RV32IMAC 
@@ -62,4 +65,3 @@ The most privileged code runs in “Ring 0” and has access to the entire syste
 RISC-V has three privilege levels: User Mode (U-mode), Supervisor Mode (S-mode), and Machine Mode (M-mode). One can think of these as “Ring 2”, “Ring 1”, and “Ring 0” respectively. Other modes like a hypervisor mode (H-Mode) are available as variations of these 3 basic modes.
 
 Much like in the figure above, U-mode is for user processes, S-mode is for kernel and/or device drivers, and M-mode is used for bootloader and/or firmware. Each privilege level has access to specific Control and Status Registers (CSRs), which are special registers that report the state of the system, or control its behaviour. Higher privilege levels can access the CSRs of less privileged levels.
-

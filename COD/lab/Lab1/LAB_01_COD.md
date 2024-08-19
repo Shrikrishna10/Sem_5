@@ -9,3 +9,5 @@ lhu -> this is the syntax for the unsigned #
 
 for next lab practice finish trying out some codes and play around in ripes 
 go through n understand the lil indian and big indian properly 
+
+

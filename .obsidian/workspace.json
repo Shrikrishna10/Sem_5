@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COD/notes/COD.md",
+                "file": "COD/lab/Lab1/Lab_1.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COD/notes/COD.md",
+                "file": "COD/lab/Lab1/Lab_1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COD/notes/COD.md",
+                "file": "COD/lab/Lab1/Lab_1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COD/notes/COD.md"
+                "file": "COD/lab/Lab1/Lab_1.md"
               }
             }
           }
@@ -147,10 +148,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9ec0eb75608f7eb8",
+  "active": "3f098bd69b6c1bf7",
   "lastOpenFiles": [
-    "COD/notes/COD.md",
+    "COD/lab/Lab1/LAB_01_COD.md",
+    "COD/lab/Lab1/Lab_1.md",
+    "COD/lab/Lab2/Lab_2.md",
     "selflearning/RISC-V.md",
+    "COD/lab/Lab2/add32_carry.s",
+    "COD/lab/Lab_2.md",
+    "COD/lab/Lab2",
+    "COD/lab/add32_carry.s",
+    "COD/notes/COD.md",
+    "COD/resources_from_prof/RISCV_CARD.pdf",
     "Pasted image 20240818191141.png",
     "Pasted image 20240818083115.png",
     "Pasted image 20240818071706.png",
@@ -162,11 +171,6 @@
     "CCN/resources_from_prof/Unit 1/Classes 4 & 5 - Delay, Loss, and Throughput in Packet-Switched Networks.pdf",
     "CCN/resources_from_prof/Unit 1/Class 3 - Network Core.pdf",
     "CCN/resources_from_prof/Unit 1/Class 10 Numerical Problems.pdf",
-    "CCN/resources_from_prof/Unit 1/Class 1 Internet - Introduction & Terminology.pdf",
-    "CCN/resources_from_prof/Unit 1/CLASS 6 - Numericals on Delay, Loss, and Throughput.pdf",
-    "CCN/resources_from_prof/Unit 1/CLASS 14- Web and HTTP Message formats.pdf",
-    "CCN/resources_from_prof/Unit 1/CLASS 13- Web and HTTP- Overview, Non-persistent and Persistent.pdf",
-    "COD/lab/Lab1/LAB_01_COD.md",
     "CCN/lab/Lab1/CCN_Lab_1.md",
     "CCN/lab/Lab0/LAB 0.md",
     "CCN/lab/screenshots/Screenshot from 2024-08-13 14-18-15.png",
