@@ -148,6 +148,47 @@ There is no exclusive subi instruction in riscv
 	- B-format: for branches (a minor variant of U-format)
 	- U-format:
 	- J-format:
-There is a sort of symmetry or regularity maintained in these formats;
-the op code field is fixed and is always present 
+
+
+
+# How different types are encoded
+## Regularity in instruction Encoding:
+- Position of operands in the positions if the field is needed in a instruction format.
+- There is a sort of symmetry or regularity maintained in these formats;
+- the op code field is fixed and is always present 
+- Eg: Op code is in bit position [6:0], fun3 [14: 12] & so on.
+![[Pasted image 20240821110036.png]]
+### opcode: 
+- 7-bit
+- partially specifies which of the 6 types of instruction formats.
+- For R-type: 01  | 100 | 11
+- it tells what the sub-class of instruction which is being decoded
+- it has 3 fields:
+	- the last 11 is the one that says what we are using in terms of extensions here it is saying that it is G extension
+
+>[!Question]
+>Find the binary encodings for the instruction
+
+
+
+| type | instruction            | syntax                   |
+| ---- | ---------------------- | ------------------------ |
+| R    | rd, rs1, rs2           | add rd, rs1, rs2         |
+| I    | rd, rs1, imm2 (signed) | lw rd, imr<br>add rd, rs |
+| S    | rs1, rs2, imm          | sw rs2, im<br>           |
+
+How R-format instruction are encoded?
+We group in four bits and then convert it to hexadecimal
+
+sub i is not intentionally included in the isa
+
+>[!Question]
+>find the encoding of lb x10, 32(x12)
+> format is lb rd, imm12(rs1)
+> 
+> find encoding of xor x15, x22, x27
+> slti x12, x13, x15
+> lw x20, 12(x10)
+> sb  x12, 12(x10)
+
 

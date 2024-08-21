@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCN/lab/Lab2/Lab_2.md",
+                "file": "COD/notes/COD.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "637ff021f7ae0abc",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCN/lab/Lab2/Lab_2.md",
+                "file": "COD/notes/COD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCN/lab/Lab2/Lab_2.md",
+                "file": "COD/notes/COD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCN/lab/Lab2/Lab_2.md"
+                "file": "COD/notes/COD.md"
               }
             }
           }
@@ -148,6 +149,23 @@
   },
   "active": "4fccd89144f75452",
   "lastOpenFiles": [
+    "Pasted image 20240821110036.png",
+    "Verif_elective2/notes/Verif.md",
+    "COD/lab/Lab1/Lab_1.md",
+    "COD/lab/Lab1/l1_hus.s",
+    "COD/lab/simple_add.s",
+    "COD/lab/Lab1/programs-135/l1_ws.s",
+    "COD/lab/Lab1/programs-135/l1_hus.s",
+    "COD/lab/Lab1/programs-135/l1_hs.s",
+    "COD/lab/Lab1/programs-135/l1_bs.s",
+    "COD/lab/Lab1/programs-135",
+    "COD/lab/Lab1/l1_hs.s",
+    "COD/lab/Lab1/l1_ws.s",
+    "COD/lab/Lab1/l1_bs.s",
+    "Untitled.md",
+    "Pasted image 20240821080812.png",
+    "COD/lab/Lab1/LAB_01_COD.md",
+    "CCN/lab/Lab2/Lab_2.md",
     "CCN/lab/Lab2/WhatsApp Image 2024-08-20 at 2.46.27 PM (1).jpeg",
     "CCN/lab/Lab2/WhatsApp Image 2024-08-20 at 2.46.27 PM.jpeg",
     "CCN/lab/Lab2/WhatsApp Image 2024-08-20 at 2.45.30 PM.jpeg",
@@ -155,30 +173,14 @@
     "CCN/lab/Lab1/Screenshot from 2024-08-13 14-08-44.png",
     "Pasted image 20240820141655.png",
     "CCN/lab/Lab1/CCN_Lab_1.md",
-    "CCN/lab/Lab2/Lab_2.md",
-    "CCN/lab/Lab2/Lab2.pdf",
-    "CCN/lab/Lab2",
-    "CCN/lab/Lab2.pdf",
-    "CCN/lab/Lab2.odf",
-    "CCN/resources_from_prof/CCN Brief notes.pdf",
-    "COD/lab/Lab1/Lab_1.md",
-    "COD/lab/Lab1/LAB_01_COD.md",
     "COD/lab/Lab2/Lab_2.md",
     "selflearning/RISC-V.md",
-    "COD/lab/Lab2/add32_carry.s",
     "COD/lab/Lab_2.md",
-    "COD/lab/Lab2",
-    "COD/lab/add32_carry.s",
     "COD/notes/COD.md",
-    "COD/resources_from_prof/RISCV_CARD.pdf",
     "Pasted image 20240818191141.png",
     "Pasted image 20240818083115.png",
     "Pasted image 20240818071706.png",
-    "Pasted image 20240818071701.png",
-    "Verif_elective2/notes/Verif.md",
-    "Verif_elective2/notes",
     "CCN/lab/Lab0/LAB 0.md",
-    "CCN/lab/screenshots/Screenshot from 2024-08-13 14-18-15.png",
     "Verif_elective2/Verif.md",
     "RISC-V.md",
     "CCN/lab/CCN_Lab_1.md",

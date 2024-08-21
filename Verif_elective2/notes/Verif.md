@@ -96,6 +96,40 @@ y=a+b;
 end
 ```
 
+## Constant
+SystemVerilog allows you to declare constant identifiers.
+You can declare an identifier as constant by prefixing the usual identifier definition with the keyword const.
+>[!Syntax]
+>const bit [64] data_bus =h'asdf; //Not sure need to check
+
+## Strings
+The keyword is string.
+SystemVerilog string type holds variable-length.
+Dynamic
+### String functions
+#### getc(n)
+it gets the ASCII value of the string that it is used on.
+#### tolower
+returns the string in lower-case format
+s.tolower()
+#### toupper
+returns the string in upper-case format
+
+#### Concatenation
+we can use the { } for it
+
+##### putc()
+putc (m, c)
+this task writes a byte c into a string at location m, that must be between 0 & the length as given by len.
+
+#### len()
+s.len()
+This gives the length of the string, also other things 
+
+#### substr(start, end)
+this function extracts characters from location start to end 
+
+
 # Array
 https://www.edaplayground.com/x/qAKd
 
@@ -422,4 +456,142 @@ User-Defined type in SystemVerilog
 > 	end
 > 	endmodule
 > ``` 
+
+
+## Structures
+### Struct data type
+- Structures allow multiple variables to be grouped together under a common name
+- They are always **unpacked data types**
+> [!Syntax]
+> ```
+> module test;
+> struct{
+> logic [32] data;
+> bit [8] addr;
+> } packet;
+> 
+> initial begin
+> packet.data=32'hffff;
+> packet.addr=8'd9;
+> $display("Data: %0h, addr: %0d", data, addr);
+> end 
+> endmodule
+> ```
+
+
+#### Eg: // Code has errors need to be checked
+struct {
+logic [32] in1;
+logic [8] in2;
+opcode_t op_code;
+}
+typedef enum { NOP, ADD, SUB, MUL, DIV} opcode_t;
+
+program test; // Not taught yet will be covered in the next class
+initial begin
+packet.in1 = 10;
+packet.in2 = 20;
+packet.opcode=ADD;
+$display("in1=%0d in2=%0d opcode=%0s", packet.in1, packet.in2, packet.opcode name());
+end
+endprogram // will be taught in the next class
+
+
+#### Unpacked Structures 
+typedef struct {
+logic [8] sa; //MSB
+logic [8] da; 
+logic [8] crc;
+logic [8] payload; //LSB
+} unpacked_st;
+
+program test;
+unpacke_st pkt;
+initial begin 
+pkt.sa=1; pkt.da=4; pkt.payload=8h'ffff;
+pkt[8] =40;
+end 
+endprogram
+
+>[!Note]
+>Slicing on unpacked struct is not allowed, it will result in compile error.
+>We should access only elements of struct, not individual fields.
+
+
+### Packed Structures
+
+
+## Unions 
+- A union is a data type that represents a single piece of storage that can be accessed using one of the named member data types.
+- **Only one of the data types in the union can be used at a time.**
+- Unions are useful when you frequently need to read & write a register in several different formats.
+
+
+#### Eg
+module test;
+union{ int j;
+real f;
+}un_var;
+
+initial un_var.f=12.345 // Set value in floating point format
+endmodule
+
+>[!Note]
+>Unions are used when you have to use the same memory location for two or more data members.
+>Structs allocate enough memory space to store all of the fields in the struct.
+>In union, the total memory space allocated is equal to the member with the largest size
+
+
+# Type Conversions
+
+In systemverilog casting means the conversions of one data type to another datatype.
+There are 2 types of casting:
+- Static Casting
+- Dynamic Casting
+
+## Static Casting
+This occurs entirely in the compilation time.
+A data type can be changed using a cast (') operation.
+
+#### Eg:
+```verilog
+module casting;
+real r_a;
+int i_a;
+
+initial begin
+r_a = {2.1 * 3.2};
+// real to integer conversion
+i_a = int'(2.1 * 3.2); // or i_a = int'(r_a);
+$display("real value in %f", r_a);
+$display("int value in %f", i_a);
+```
+
+
+
+## Dynamic Casting
+Use the dynamic cast when converting from a type with a larger number of values than the destination, such as int to an enumerated variable.
+the operator is $cast.
+
+
+
+
+# Testbench - Intro
+The purpose of a testbench is to determine the correctness of the DUT/ DUV.
+DUT -> Design under test
+DUV -> Design under verification
+This is accomplished by the following steps: -> this is the basic steps in the verification
+- Generate stimulus 
+- Apply stimulus to the DUT
+- Capture the response
+- Check for correctness
+- Measure progress against the overall verification goals.
+
+There are many types of testbenchs, some are:
+- Simple testbench
+- Self-checking testbench
+- Layered testbench
+
+***In HW lvl we test the circuit.*** 
+***In SW lvl we verify the design.***
 
