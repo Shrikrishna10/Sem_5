@@ -192,3 +192,16 @@ sub i is not intentionally included in the isa
 > sb  x12, 12(x10)
 
 
+
+### Sign extension of Imm12 bit number
+
+>[!Question]
+>What is the result stored in the destination register after the execution of the following instructions?
+>ADDI x15, x12, 0x7ff
+>ADDI x15, x12, 2049
+>
+>ADDI x5, x0, 0x7ff
+>ORI x5, x0, 2049
+
+mnemonics rd, rs1, imm
+
