@@ -206,3 +206,66 @@ sub i is not intentionally included in the isa
 mnemonics rd, rs1, imm
 
 
+# Logical Operations
+
+### Shift operations are I-type
+there are no 12 bit requirements and we only need to the 7 bits in func7 for the opcode
+## Shift right Logical
+Its goal is to divide the rsi(operand) with 2^n where n is the number of times it is shifted 
+Zero is appended to the positions that were shifted
+>[!Question]
+>Divide a>88 by 8 & b>-88/8 in assembly using right shift operators
+
+>[!Solution]
+>a>
+```asm
+addi x6, x0, 88
+srli x5,x6, 3
+````
+>[!Solution]
+>b>
+>The obtained result in the x5 register is going to be wrong, since the MSB is appended with 0 for a -ve number which should be appended with FFF or 111 instead.  
+```asm
+addi x6, x0, -88
+srli x5, x6, 3
+```
+
+## Shift right arithmetic 
+>[!Example]
+```asm
+addi x6, x0, -88
+srai x5, x6, 3
+```
+This is for all signed numbers that need to be divided.
+the difference from the opcode for the logical operation is seen in the func7 
+## Shift Left Logical
+Its goal is to multiply the rsi(operand) with 2^n where n is the number of times it is shifted 
+Zero is appended to the positions that were shifted
+
+
+## Example Codes
+
+>[!Question]
+>Write a program for the following C-statement, write the corresponding RISC-v assembly code. Assume the base address of the variables f, g, h, i & j are mapped to x5, x6, x7, x28 & x29, respectively. Assume that the base address of the arrays A & B are n registers x10, x11, respectively.
+>	B[8] = A[ i-j]
+
+>[!Solution]
+>f -> x5
+>g -> x6
+>h -> x7
+>i -> x28
+>j -> x29
+>A ->x10
+>B ->x11
+```asm
+sub x30, x28, x29 # computing i-j
+slli x30, x30, 2 # offset = index*4 = x30<<2 = (i-j)*4
+add x3, x30, x10
+lw x30, 0(x3)
+sw x30, 32(x11)
+```
+
+>[!Note]
+>If the index is unknown for a load or store follow the following steps to calculate the physical address
+>- Shift the index register towards left by 1(half word), 2(word) & 3(double word) depending on the data type.
+>- add the 
