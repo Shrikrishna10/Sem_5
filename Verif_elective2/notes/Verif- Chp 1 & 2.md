@@ -594,4 +594,33 @@ There are many types of testbenchs, some are:
 
 ***In HW lvl we test the circuit.*** 
 ***In SW lvl we verify the design.***
+Here we will use testing and verification interchangeably for now.
 
+There are 2 types of testing:
+- **Directed testing**
+- **Constrained Random Stimulus**
+### Directed Testing
+- You write stimulus vectors 
+	![[Pasted image 20240823111351.png]]
+
+### Constrained Random Stimulus
+focusing on one word at a time from the name of the test
+![[Pasted image 20240823111421.png]]
+#### Random 
+- We randomly give values to test for various different test cases
+
+
+### Coverage Convergence #important
+![[Pasted image 20240823111605.png]]
+path coverage
+
+
+# Principles of Verification
+## Constrained Random Stimulus
+## Functional Coverage
+## Layered Testbench using transactors
+## Common testbench for all tests
+## Test-case specific code kept separate from testbench
+
+
+From Chp 1 These are important topics: Testbench functionality, Direct testing, Constraint Random, Coverage Convergence #important 

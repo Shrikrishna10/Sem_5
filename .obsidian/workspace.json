@@ -11,11 +11,28 @@
             "id": "9fbc9c7663536ec4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Verif_elective2/notes/Verif- Chp 1 & 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a7a8f9ec40d0f7c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Verif-Chp 3.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -82,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Verif-Chp 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Verif-Chp 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +138,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Verif-Chp 3.md"
+              }
             }
           }
         ]
@@ -139,12 +160,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9fbc9c7663536ec4",
+  "active": "a7a8f9ec40d0f7c5",
   "lastOpenFiles": [
+    "Verif_elective2/notes/Verif- Chp 1 & 2.md",
+    "Verif-Chp 3.md",
+    "Pasted image 20240823111605.png",
+    "Pasted image 20240823111421.png",
+    "Pasted image 20240823111351.png",
     "COD/notes/COD.md",
-    "Untitled.md",
     "Pasted image 20240821110036.png",
-    "Verif_elective2/notes/Verif.md",
     "COD/lab/Lab1/Lab_1.md",
     "COD/lab/Lab1/l1_hus.s",
     "COD/lab/simple_add.s",
@@ -164,13 +188,10 @@
     "CCN/lab/Lab2/WhatsApp Image 2024-08-20 at 2.45.30 PM.jpeg",
     "CCN/lab/Lab1/Screenshot from 2024-08-13 14-18-15.png",
     "CCN/lab/Lab1/Screenshot from 2024-08-13 14-08-44.png",
-    "Pasted image 20240820141655.png",
     "CCN/lab/Lab1/CCN_Lab_1.md",
     "COD/lab/Lab2/Lab_2.md",
     "selflearning/RISC-V.md",
     "COD/lab/Lab_2.md",
-    "Pasted image 20240818191141.png",
-    "Pasted image 20240818083115.png",
     "CCN/lab/Lab0/LAB 0.md",
     "Verif_elective2/Verif.md",
     "RISC-V.md",
