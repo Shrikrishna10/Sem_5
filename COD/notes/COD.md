@@ -17,6 +17,7 @@ in the store instruction the destination operand is a data memory
 
  ***Immediate Value is used as source #2 operand***
 
+
 # Operands of the Computer Hw
 ## Operand Location: *physical location in the computer*
 
@@ -137,7 +138,6 @@ I can call an instruction of I-type if & only if it has
 as its operands.
 *Eg:* `addi rd, rs1, imm`
 There is no exclusive subi instruction in riscv 
-
 # Representing Instructions in the Computer
 ## How do we represent Instructions?
 - An assembler string like "add x10, x11, ,x12" is meaningless to hw as hw can understand only machine code
@@ -269,3 +269,5 @@ sw x30, 32(x11)
 >If the index is unknown for a load or store follow the following steps to calculate the physical address
 >- Shift the index register towards left by 1(half word), 2(word) & 3(double word) depending on the data type.
 >- add the 
+
+
