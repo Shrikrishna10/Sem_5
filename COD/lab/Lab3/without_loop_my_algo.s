@@ -1,10 +1,3 @@
-Today we will be covering Branches
-=
-for making proper use of branches we need to understand what labels are.
-no idea what is happening go home n do #todo
-
-
-Non-Optimised Code
 .data
 a: .word 0x22311234
 
