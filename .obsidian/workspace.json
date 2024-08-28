@@ -11,8 +11,12 @@
             "id": "a14784c6868ffb16",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Verif-Chp 3.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -60,6 +64,14 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "1d07a4a27fb90a9e",
+            "type": "leaf",
+            "state": {
+              "type": "mk-path-view",
+              "state": {}
+            }
           }
         ]
       }
@@ -82,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Verif-Chp 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Verif-Chp 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Verif-Chp 3.md"
+              }
             }
           }
         ]
@@ -137,11 +153,15 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-projects:Open projects": false
     }
   },
   "active": "a14784c6868ffb16",
   "lastOpenFiles": [
+    "COD/resources_from_prof/U1/COD_RISCV_ Unit 1.pdf",
+    "Tags",
+    "Verif-Chp 3.md",
     "COD/lab/Lab3/Lab_3.md",
     "COD/lab/add21_carry.s",
     "COD/lab/Lab3/without_loop_my_algo.s",
@@ -150,7 +170,6 @@
     "COD/lab/Lab2/Lab_2.md",
     "COD/lab/Lab3",
     "Verif_elective2/notes/Verif- Chp 1 & 2.md",
-    "Verif-Chp 3.md",
     "Pasted image 20240823111605.png",
     "Pasted image 20240823111421.png",
     "Pasted image 20240823111351.png",
@@ -162,7 +181,6 @@
     "COD/lab/Lab1/programs-135/l1_hus.s",
     "COD/lab/Lab1/programs-135/l1_hs.s",
     "COD/lab/Lab1/programs-135/l1_bs.s",
-    "COD/lab/Lab1/programs-135",
     "Pasted image 20240821080812.png",
     "COD/lab/Lab1/LAB_01_COD.md",
     "CCN/lab/Lab2/Lab_2.md",
