@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Verif-Chp 3.md",
+                "file": "COD/notes/COD.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Verif-Chp 3.md",
+                "file": "COD/notes/COD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Verif-Chp 3.md",
+                "file": "COD/notes/COD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Verif-Chp 3.md"
+                "file": "COD/notes/COD.md"
               }
             }
           }
@@ -159,9 +159,11 @@
   },
   "active": "a14784c6868ffb16",
   "lastOpenFiles": [
+    "COD/lab/Lab2/add_double.s",
+    "COD/lab/Lab3/with_loop_my_algo.s",
+    "Verif-Chp 3.md",
     "COD/resources_from_prof/U1/COD_RISCV_ Unit 1.pdf",
     "Tags",
-    "Verif-Chp 3.md",
     "COD/lab/Lab3/Lab_3.md",
     "COD/lab/add21_carry.s",
     "COD/lab/Lab3/without_loop_my_algo.s",
@@ -179,8 +181,6 @@
     "COD/lab/simple_add.s",
     "COD/lab/Lab1/programs-135/l1_ws.s",
     "COD/lab/Lab1/programs-135/l1_hus.s",
-    "COD/lab/Lab1/programs-135/l1_hs.s",
-    "COD/lab/Lab1/programs-135/l1_bs.s",
     "Pasted image 20240821080812.png",
     "COD/lab/Lab1/LAB_01_COD.md",
     "CCN/lab/Lab2/Lab_2.md",

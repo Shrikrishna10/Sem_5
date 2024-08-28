@@ -5,7 +5,7 @@ There are 2 types of procedures:
 - Functions
 - Tasks
 - always 
-***Procedural blocks are parallelly run***
+	***Procedural blocks are parallelly run***
 ## Difference between Functions and tasks?
 ***There can be delay statements in tasks but functions have to produce the output immediately. (i.e. There can be no delays in function)***
 = 
@@ -119,4 +119,5 @@ If you have a task or function with many arguments, some with default values, & 
 #search Task stack sharing and memory consumption : automatic keyword
 
 ### Directions
+#### Ref directions #todo #search #important 
 

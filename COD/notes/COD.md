@@ -271,3 +271,23 @@ sw x30, 32(x11)
 >- add the 
 
 
+
+# Language of the Computer - Instructions
+
+>[!Question]
+>Translate the following C code to RISC-V. Assume that the variables f, g, h, i & j are assigned to registers x5, x6, x7, x28 & x29, respectively. Assume that the base address of the arrays A & B are in register x10 & x11, respectively. Assume that the elements of the arrays A & B are 4-byte size:
+>B[8]  = A[i] + A[j]; 
+
+>[!Solution]
+>```asm
+> .data
+> a: .byte 0x12. 0x23, 0x34, ox56
+> 
+> .text
+> la x10, 0(a)
+> 
+>```
+
+Branches #todo #search 
+
+signed 13-bits are stored in 12 bits how? #search #todo 
