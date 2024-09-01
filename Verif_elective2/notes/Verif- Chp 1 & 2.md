@@ -131,6 +131,7 @@ this function extracts characters from location start to end
 
 
 # Array
+#edaplayground 
 https://www.edaplayground.com/x/qAKd
 
 | Packed                                                                                          | Unpacked                                                                                                                                                                                                              |

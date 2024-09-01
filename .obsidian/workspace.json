@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COD/notes/COD.md",
+                "file": "Verif-Chp 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COD/notes/COD.md",
+                "file": "Verif-Chp 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COD/notes/COD.md",
+                "file": "Verif-Chp 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COD/notes/COD.md"
+                "file": "Verif-Chp 3.md"
               }
             }
           }
@@ -147,18 +148,19 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-projects:Open projects": false
     }
   },
   "active": "0714ee1fde71940e",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "Pasted image 20240829120356.png",
     "Pasted image 20240829114557.png",
     "LIC_elective1/LIC.md",
@@ -168,23 +170,37 @@
     "Excalidraw",
     "LIC_elective1/UE22EC342AB3_Unit1_Class1_3.pdf",
     "CCN/resources_from_prof/Unit 1/CLASS 12- Principles of network applications.pdf",
+=======
+    "Verif_elective2/notes/Verif- Chp 1 & 2.md",
+    "Verif-Chp 3.md",
+    "Differences of $ function codes.md",
+    "COD/resources_from_prof/RISCV_CARD.pdf",
+    "selflearning/Risc-v Single Cycle Five Stage Processor.md",
+    "COD/notes/COD.md",
+    "selflearning/cpuideas.png",
+    "selflearning/RISC-V Logo.png",
+    "selflearning/selflearning.md",
+    "Tags",
+>>>>>>> 5210cd81a46273ecda393be599ebb776cc25aa35
     "COD/lab/Lab2/add_double.s",
     "COD/lab/Lab3/with_loop_my_algo.s",
-    "Verif-Chp 3.md",
     "COD/resources_from_prof/U1/COD_RISCV_ Unit 1.pdf",
-    "Tags",
     "COD/lab/Lab3/Lab_3.md",
     "COD/lab/add21_carry.s",
     "COD/lab/Lab3/without_loop_my_algo.s",
     "COD/notes/Computer Organisation and Design.md",
     "COD/lab/Lab2/Lab_2.md",
     "COD/lab/Lab3",
-    "Verif_elective2/notes/Verif- Chp 1 & 2.md",
     "Pasted image 20240823111605.png",
     "Pasted image 20240823111421.png",
     "Pasted image 20240823111351.png",
     "Pasted image 20240821110036.png",
     "COD/lab/Lab1/Lab_1.md",
+<<<<<<< HEAD
+=======
+    "COD/lab/Lab1/l1_hus.s",
+    "COD/lab/simple_add.s",
+>>>>>>> 5210cd81a46273ecda393be599ebb776cc25aa35
     "Pasted image 20240821080812.png",
     "COD/lab/Lab1/LAB_01_COD.md",
     "CCN/lab/Lab2/Lab_2.md",
