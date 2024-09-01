@@ -291,3 +291,30 @@ sw x30, 32(x11)
 Branches #todo #search 
 
 signed 13-bits are stored in 12 bits how? #search #todo 
+
+
+# Instruction for Making Decisions
+
+the instruction is similar to an **if statement with a go-to.**
+## Conditional Branches:
+A instruction that tests a value & that allows for a subsequent transfer of control to a new address in the program based on the outcome of the test.
+![[Pasted image 20240829105505.png]]
+
+#### Question
+In the following code segment, f, g, h, i, and j are variables. If the five
+variables f through j correspond to the five registers x19 through x23,
+what is the compiled RISC-V code for this C if statement?
+if (i == j) f = g + h; else f = g − h;
+![[Pasted image 20240829114557.png]]
+here we need to compare i & j and make decisions on the opposite outcome since we can jump to else if the condition is not meet
+
+#### Question
+Loops : for iterating a computation
+Here is a traditional loop in C:
+while (save[i] == k)
+i += 1;
+Assume that i and k correspond to registers x22 and x24 and the base of
+the array save is in x25. What is the RISC-V assembly code corresponding
+to this C code?
+![[Pasted image 20240829120356.png]]
+

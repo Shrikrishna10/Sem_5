@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8aa6f43101346342",
+        "id": "c13b0a98669f22f1",
         "type": "tabs",
         "children": [
           {
-            "id": "a14784c6868ffb16",
+            "id": "0714ee1fde71940e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 221.5110321044922,
     "collapsed": true
   },
   "right": {
@@ -157,8 +157,17 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "a14784c6868ffb16",
+  "active": "0714ee1fde71940e",
   "lastOpenFiles": [
+    "Pasted image 20240829120356.png",
+    "Pasted image 20240829114557.png",
+    "LIC_elective1/LIC.md",
+    "COD/notes/COD.md",
+    "Pasted image 20240829105505.png",
+    "Excalidraw/Drawing 2024-08-29 08.36.14.excalidraw.md",
+    "Excalidraw",
+    "LIC_elective1/UE22EC342AB3_Unit1_Class1_3.pdf",
+    "CCN/resources_from_prof/Unit 1/CLASS 12- Principles of network applications.pdf",
     "COD/lab/Lab2/add_double.s",
     "COD/lab/Lab3/with_loop_my_algo.s",
     "Verif-Chp 3.md",
@@ -168,7 +177,6 @@
     "COD/lab/add21_carry.s",
     "COD/lab/Lab3/without_loop_my_algo.s",
     "COD/notes/Computer Organisation and Design.md",
-    "COD/notes/COD.md",
     "COD/lab/Lab2/Lab_2.md",
     "COD/lab/Lab3",
     "Verif_elective2/notes/Verif- Chp 1 & 2.md",
@@ -177,18 +185,12 @@
     "Pasted image 20240823111351.png",
     "Pasted image 20240821110036.png",
     "COD/lab/Lab1/Lab_1.md",
-    "COD/lab/Lab1/l1_hus.s",
-    "COD/lab/simple_add.s",
-    "COD/lab/Lab1/programs-135/l1_ws.s",
-    "COD/lab/Lab1/programs-135/l1_hus.s",
     "Pasted image 20240821080812.png",
     "COD/lab/Lab1/LAB_01_COD.md",
     "CCN/lab/Lab2/Lab_2.md",
     "CCN/lab/Lab2/WhatsApp Image 2024-08-20 at 2.46.27 PM (1).jpeg",
     "CCN/lab/Lab2/WhatsApp Image 2024-08-20 at 2.46.27 PM.jpeg",
     "CCN/lab/Lab2/WhatsApp Image 2024-08-20 at 2.45.30 PM.jpeg",
-    "CCN/lab/Lab1/Screenshot from 2024-08-13 14-18-15.png",
-    "CCN/lab/Lab1/Screenshot from 2024-08-13 14-08-44.png",
     "CCN/lab/Lab1/CCN_Lab_1.md",
     "selflearning/RISC-V.md",
     "COD/lab/Lab_2.md",
