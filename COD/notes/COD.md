@@ -1,4 +1,4 @@
-# How load-store Architecture works
+- [ ] # How load-store Architecture works
 Instructions provide 2 information:
 - Fields like opcode, fun3, fun7 define the type & operation to be performed
 - Fields which can identify the destination and source operands.

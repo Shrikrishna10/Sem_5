@@ -13,31 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COD/notes/COD.md",
+                "file": "Verif-Chp 3.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "abdfb8babd44cd9a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "selflearning/Risc-v Single Cycle Five Stage Processor.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9f6a8eb26dc76f63",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "COD/resources_from_prof/RISCV_CARD.pdf"
               }
             }
           }
@@ -70,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#important",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COD/notes/COD.md",
+                "file": "Verif-Chp 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COD/notes/COD.md",
+                "file": "Verif-Chp 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COD/notes/COD.md"
+                "file": "Verif-Chp 3.md"
               }
             }
           }
@@ -182,16 +160,18 @@
   },
   "active": "a14784c6868ffb16",
   "lastOpenFiles": [
+    "Verif_elective2/notes/Verif- Chp 1 & 2.md",
+    "Verif-Chp 3.md",
+    "Differences of $ function codes.md",
     "COD/resources_from_prof/RISCV_CARD.pdf",
-    "COD/notes/COD.md",
     "selflearning/Risc-v Single Cycle Five Stage Processor.md",
+    "COD/notes/COD.md",
     "selflearning/cpuideas.png",
     "selflearning/RISC-V Logo.png",
     "selflearning/selflearning.md",
     "Tags",
     "COD/lab/Lab2/add_double.s",
     "COD/lab/Lab3/with_loop_my_algo.s",
-    "Verif-Chp 3.md",
     "COD/resources_from_prof/U1/COD_RISCV_ Unit 1.pdf",
     "COD/lab/Lab3/Lab_3.md",
     "COD/lab/add21_carry.s",
@@ -199,7 +179,6 @@
     "COD/notes/Computer Organisation and Design.md",
     "COD/lab/Lab2/Lab_2.md",
     "COD/lab/Lab3",
-    "Verif_elective2/notes/Verif- Chp 1 & 2.md",
     "Pasted image 20240823111605.png",
     "Pasted image 20240823111421.png",
     "Pasted image 20240823111351.png",
@@ -207,7 +186,6 @@
     "COD/lab/Lab1/Lab_1.md",
     "COD/lab/Lab1/l1_hus.s",
     "COD/lab/simple_add.s",
-    "COD/lab/Lab1/programs-135/l1_ws.s",
     "Pasted image 20240821080812.png",
     "COD/lab/Lab1/LAB_01_COD.md",
     "CCN/lab/Lab2/Lab_2.md",

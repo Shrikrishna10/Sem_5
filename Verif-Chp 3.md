@@ -1,3 +1,12 @@
+# Verilog Coding Guidelines
+- 1: When Modelling sequential logic, use only nonblocking assignments.
+- 2: When modeling latches, use only nonblocking assignments.
+- 3: When modeling combinational Logic with an always block, use only blocking assignments.
+- 4: When modeling both sequential and combinational logic withing the same always block, use nonblocking assignments.
+- 5: No design should have mix blocking and nonblocking assignments in the same always block for HDL 
+- 6: Do not make assignment to the same variable from more than one always block.
+- 7: Use $strobe to display values that have been assigned using nonblocking assignments.
+- 8: Do not make assignments using #0 delays.
 # Procedural Blocks
 
 *Why do we require Procedural Blocks?* #search
@@ -120,4 +129,65 @@ If you have a task or function with many arguments, some with default values, & 
 
 ### Directions
 #### Ref directions #todo #search #important 
+
+
+# Stratified Event Queue #search #todo 
+
+## Verilog Stratified Event Queue 
+Active Region
+Inactive Region
+NBA region -> Non Blocking Assignment 
+Postponed Region
+
+### Active region
+- Blocking assignments: evaluation and update
+- Evaluation of RHS of NBA
+- $display and evaluate the inputs and updates outputs of primitives
+
+>[!Question]
+What is the final value of a?
+module test;
+reg a;
+initial a =0; // T1
+initial a =1; //T2
+endmodule
+
+In this case the value of a will be x 
+
+
+>[!Question]
+What is the final value of a?
+module test;
+reg a;
+initial a =0; // WT
+initial $display("Value of a=%b", a); //RT
+endmodule
+
+there are 2 active region cases in which there can be one case where the RT is executed 1st then we get x but if WT gets executed 1st then we get 0.
+
+
+#gptreponse
+[[Differences of $ function codes]]
+
+Blocking statements are sequential in execution #important \
+Non Blocking statements are concurrent or parallel in execution #important 
+
+#edaplayground
+To understand the differences https://www.edaplayground.com/x/YBPq
+
+## SystemVerilog Stratified Event Queue
+The **always** procedural block is used for generating purpose modeling.
+At the RTL level, the always procedural  block can be used to **model**:
+
+Combinational logic, latched logic, sequential logic
+
+An if statement without an else is synthesized into an latch while an if statement with else is a mux. -> this is a problem of verilog
+
+if at time 0, always block executes  
+
+
+
+# Race within RTL
+
+==NBA helps to see the old value of the flop while sampling==  #important #search 
 
