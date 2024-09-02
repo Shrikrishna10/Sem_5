@@ -44,7 +44,10 @@
   "showRibbon": true,
   "deleteFileOption": "trash",
   "expandedSpaces": [
-    "/"
+    "/",
+    "//COD/COD/notes",
+    "//COD/COD/lab",
+    "//COD/COD/lab/COD/lab/Lab4"
   ],
   "expandFolderOnClick": true,
   "menuTriggerChar": "/",
