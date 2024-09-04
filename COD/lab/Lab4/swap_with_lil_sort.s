@@ -1,21 +1,17 @@
 .data
-a: .byte 0x11, 0x12
+a: .byte 0x12
 
 .text
-la x10, a
-lbu x11, 0(x10)
-lbu x12,1(x10)
-bgt x11, x12, exit
-# if this is simply for this q 
-# only then we can do it directly using store functions
-Loop:
-    add x13,x13,x12
-    mv x12 x0
-    add x12 x11 x12
-    mv x11 x0
-    add x11 x11 x13
-    mv x13 x0
+la x10,a
+lb x11,  0(x10)  #x11=0x12
+andi x12,x11,0xE0  # and x12 ,0xE0
+bne x12,x0,exit
+addi x22,x0,5
+back:andi x12,x11,0x01
 
+    beq x12,x0,next
+next:srli x11,x11,1
+    addi x22,x22,-1
+    bne x22,x0,back
 exit:
-sb x11, 0(x10)
-sb x12, 1(x10)
+    addi x15,x0,0x00

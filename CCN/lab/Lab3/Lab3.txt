@@ -1,0 +1,41 @@
+1.What was the transport protocol used for DNS queries? Give source and destination port numbers for each query in the experiment. 
+	UDP is used for DNS queries.
+	a. Source = 54207 Destination = 53
+	b. Source = 50960 Destination = 53
+	c. Source = 53 Destination = 62371
+	d. Source =  Destination = 
+
+2.Under the Type A query, what is the length of the DNS query message? (Hint: use UDP length, UDP header size and DNS header size).
+	UDP header is 8 bytes and dns header is 12 bytes. UPD length is 45.
+	DNS query message length = 45-8-12 = 25 bytes
+
+3. What is the IP address returned for the Type A query? What was the TTL value? How many answers were returned? 	Under standard query response ->DNS ->Answers, The ip address is 18.66.57.26.
+	The ttl value is 126.
+	5 answers were returned
+
+4. What is the canonical name returned for the Type CNAME query? What was the TTL value? What was the additional information observed in the response? 
+	d2jj6g4vsh8eh.cloudfront.net
+	ttl value = 126 seconds
+	There was no additional information observed in the response
+
+5. What is the authoritative DNS server's name returned for the type NS query? What was the ttl value? What was the additional information observed in the response? 
+	ns1.pesuniversity.com
+	ttl is 126
+	There was no additional records
+
+6. What is the canonical host name returned for the Type MX query? What was the TTL value? What was the name of the authoritative DNS server observed in the response? 
+	ttl is 126
+	Authoritative dns server name is ns1.google.com
+
+7. Given that the DNS query and response use the same header format, how can you tell the difference between a DNS query and response? 
+	One difference is in flag.
+	Response bit will be 0 for query & 1 for response.
+
+8. Did the client request for recursive query? How can you tell? 
+	Yes, client requested for recursive query. Check flags. Recursion desired flag was set in DNS queries.
+
+9. Did the DNS server support recursive query? How can you tell
+ DNS response=> Flags =>.... .... 1... ....= Recurrision available server can do recurrsive queries.
+
+10. What was the throughput under type NS combining the DNS query and its response?
+	(68+126)/(1.83435303 - 2.10382641) =-719.9226877 
