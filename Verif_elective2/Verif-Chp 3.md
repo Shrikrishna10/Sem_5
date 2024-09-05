@@ -184,11 +184,63 @@ Combinational logic, latched logic, sequential logic
 An if statement without an else is synthesized into an latch while an if statement with else is a mux. -> this is a problem of verilog
 
 if at time 0, always block executes  
+![[Pasted image 20240904091506.png]]
 
+## SV Stratified Event Queue
+![[Pasted image 20240904091736.png]]
+In the above the grey is for design and the yellow is for testbench
+### Preponed Region
+### Active Region
+### Observed Region
+the assertion statements are run in this region
+### Reactive Region
+### Postponed Region
 
 
 # Race within RTL
 
 ==NBA helps to see the old value of the flop while sampling==  #important #search 
+>[!Rules]
+>1. We always use non blocking statements
 
 
+
+
+
+## RTL -> Register transfer Level
+
+We use register to maintain a synchronous communication in the entire circuit.
+>[!Note]
+>There are times when there is no prior device that is in the final circuit and we still need to test the DUT for all test cases so we generate Testbench stimulus mimicking device 1 for device 2
+
+
+# Races between RTL & Testbench
+https://edaplayground.com/x/iiZ6 #edaplayground 
+
+#### Asynchronous D ff with reset sv code with tb  with reset for full fpga implementation (make it a register for 4 bits)
+
+>[!Note]
+>Simulation runs 2 files one which is the testbench & the other is DUT
+
+
+
+all the procedural blocks execute at simulation time 0
+- these include initial and always block
+
+>[!Note]
+>In sv we dont write a tb in module we right it in a program block 
+>- Program block is always executed far away from the sv file in terms of time of execution
+
+
+there is a difference between always @(posedge clk) and @posedge clk this is an important point to note #important 
+
+there is a different effect to both = and <= (blocking and non-blocking) since they will execute in different regions.
+
+
+## How do we overcome the race between the RTL and testbench
+#### Program block
+- It is run at the end after the modules have been run
+- The testbench is written  in the Program block #important 
+
+
+[[obsidian://open?vault=Sem_5&file=Excalidraw%2FDrawing%202024-09-04%2009.43.54.excalidraw|Graph of code execution!?]]
