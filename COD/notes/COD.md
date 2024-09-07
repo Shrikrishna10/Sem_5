@@ -17,6 +17,11 @@ in the store instruction the destination operand is a data memory
 
  ***Immediate Value is used as source #2 operand***
 
+>[!Note]
+>Don't add the values of the register with it self to make it 0 or anything that is a bad habit since you never know what is in it especially if all you want is to add a immediate value to it. Add the register as 
+>```
+>addi rd, x0, imm
+>```
 
 # Operands of the Computer Hw
 ## Operand Location: *physical location in the computer*
@@ -337,3 +342,71 @@ the above instruction
 #HW Write a program to translate the given C statement to assembly
 for(i=0;i<10; i++)
 { c[i] = a[i] +b[i]}
+
+# Procedures #important 
+- Subroutine procedures #todo 
+- 
+## Supporting Procedures in Computer HW
+- Put the parameters to pass to the subroutine (procedure) into the argument register (a0-a7).
+
+## Leaf Procedures
+Compiled Riscv assembly procedure
+Assembly procedure should involve:
+- Save the registers used by the procedures.
+- Body of the procedure to perform the task.
+- The value of f, should be in parameter register.
+- Restore the old values of the registers we saved by "popping" them for the stack.
+- Return from the procedure.
+#### Note:
+In RISC-v we don't have exclusive instructions for PUSH data and POP data from stack. 
+
+#HW 
+#### Compile to asm
+```cpp
+	int main(){
+		int y;
+		y = diffosums(2, 3, 4, 5);
+	}
+	
+	int diffosums(int f, int g, int h, int i){
+		int results;
+		results = (f + g) - (h + i);
+		return results
+	}
+```
+
+#todo #important 
+
+```asm
+addi x10, x0, 2
+addi x11, x0, 3
+addi x12, x0, 4
+addi x13, x0, 5
+
+jal x1, diffosums
+
+diffosums:
+	add t0, x10, x11
+	add t1, x12, x13
+	sub x20, t0, t1
+	jalr x1
+	
+addi x21, x10, 0
+
+
+
+```
+
+
+## Stack #todo #search 
+
+- SP -> Stack pointer used to indicate the allocated memory used by the stack. 
+
+LIFO
+=
+
+There is no Dedicated Push and Pop instruction in RISC-V. #important 
+### Push #search #todo 
+
+### Pop #search #todo
+

@@ -242,5 +242,35 @@ there is a different effect to both = and <= (blocking and non-blocking) since t
 - It is run at the end after the modules have been run
 - The testbench is written  in the Program block #important 
 
+Graph of SV code execution
+![[Verif_elective2/Verif.md]]
 
-[[obsidian://open?vault=Sem_5&file=Excalidraw%2FDrawing%202024-09-04%2009.43.54.excalidraw|Graph of code execution!?]]
+# Program Block
+- Program block & top module
+
+we cant run a tb without module?
+Yes you can! #important 
+
+## Program constructs 
+- It can contain initial blocks and final blocks
+- It can have any number of initial blocks & final blocks
+- There can be no always blocks, it cant have primitives in it 
+- **It is only in the testbench**
+- It can't contain a program block in another program block -> basically no nested program blocks
+
+# A Verilog Memory Model - Self checking TB
+[this is in the drive ](https://drive.google.com/drive/folders/1SsxXIbtXRla13lG3l76FtCcjlMoJpLAn?usp=drive_link)
+
+>[!Question]
+>- Write Verilog RTL memory model (DUT)
+>- Write Verilog Testbench
+>Specifications:
+>	- Write a task to apply reset to DUT
+>	- Write a task to Write to all 16 locations
+>	- Write a task to Read from all 16 locations
+>	- Write comparison task to compare write data & read data.
+>- Print Test Pass or Fail with the compare results.
+
+[Solution](https://www.edaplayground.com/x/WJM5)
+- this design follows asynchronous reset
+Go through the codes #todo 

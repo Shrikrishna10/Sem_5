@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "bcf1a7cff7445efd",
+        "id": "4c6e0516200db1bc",
         "type": "tabs",
         "children": [
           {
-            "id": "7257b61640ba2785",
+            "id": "4c3f753c0086a038",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "COD/notes/COD.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#important",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -91,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "COD/notes/COD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "COD/notes/COD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "COD/notes/COD.md"
+              }
             }
           }
         ]
@@ -150,28 +157,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7257b61640ba2785",
+  "active": "4c3f753c0086a038",
   "lastOpenFiles": [
-    "delete later .md",
-    "COD/notes/COD.md",
     "Verif_elective2/Verif-Chp 3.md",
-    "Excalidraw/Drawing 2024-09-04 09.43.54.excalidraw.md",
+    "Verif_elective2/memmodel/top.sv",
+    "Verif_elective2/memmodel/selfcheckingTB/tb.sv",
+    "Verif_elective2/memmodel/selfcheckingTB/run.do",
+    "Verif_elective2/memmodel/selfcheckingTB/memory_rtl.sv",
+    "Verif_elective2/memmodel/selfcheckingTB",
+    "Verif_elective2/memmodel",
+    "Verif_elective2/selfcheckingTB/tb.sv",
+    "Verif_elective2/selfcheckingTB/run.do",
+    "Verif_elective2/selfcheckingTB/memory_rtl.sv",
+    "Verif_elective2/selfcheckingTB",
+    "Verif_elective2/Verif.md",
+    "Excalidraw/LIC.md",
+    "Excalidraw/Drawing 2024-09-06 11.24.09.excalidraw.md",
+    "COD/notes/COD.md",
+    "September COD.md",
+    "Untitled.md",
+    "COD/notes/9-08-24 The Processor.md",
+    "COD/notes/Computer Organisation and Design.md",
+    "delete later .md",
     "Pasted image 20240904101024.png",
     "CCN/lab/Lab4/Lab_4 observation.md",
     "Pasted image 20240904091736.png",
     "Pasted image 20240904091506.png",
     "Verif-Chp 3.md",
-    "CCN/lab/Lab4/udp.pcapng",
-    "CCN/lab/Lab4/tcp.pcapng",
-    "CCN/lab/Lab4/Lab4.pdf",
-    "CCN/lab/Lab4",
     "COD/lab/Lab3/Lab_3.md",
-    "CCN/lab/Lab3/Lab3.pdf",
     "COD/lab/Lab4/Lab_4.md",
-    "LIC_elective1/UE22EC342AB3_Unit1_Consolidated.pdf",
-    "COD/lab/Lab4/swap_with_lil_sort.s",
     "COD/lab/lab.md",
-    "COD/lab/Lab4",
     "COD/COD.md",
     "Vault.md"
   ]
