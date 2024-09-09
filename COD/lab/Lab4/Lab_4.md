@@ -32,3 +32,25 @@ sb x11, 0(x20)
 sb x12, 1(x20)
 addi x10, x10, 1
 blt x11, x12, Loop
+
+
+
+- Write a program to swap the values in the memory locations
+.data
+a: 
+
+- Write a program to swap the values in an array using the bubble sort method (given below is the c code for bubble sort)
+for (c = 0; c < n; c++)  
+    scanf("%d", &array[c]);
+
+  for (c = 0 ; c < n - 1; c++)  
+  {  
+    for (d = 0 ; d < n - c - 1; d++)  
+    {  
+      if (array[d] > array[d+1]) /* For decreasing order use '<' instead of '>' */  
+      {  
+        swap       = array[d];  
+        array[d]   = array[d+1];  
+        array[d+1] = swap;  
+      }  
+ 
