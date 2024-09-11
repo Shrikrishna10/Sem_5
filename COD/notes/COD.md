@@ -1,3 +1,4 @@
+https://www.cs.sfu.ca/~ashriram/Courses/CS295/assets/books/HandP_RISCV.pdf -> Textbk
 # How load-store Architecture works
 Instructions provide 2 information:
 - Fields like opcode, fun3, fun7 define the type & operation to be performed
@@ -424,6 +425,49 @@ for(i=0;i<10; i++)
 ## Supporting Procedures in Computer HW
 - Put the parameters to pass to the subroutine (procedure) into the argument register (a0-a7).
 
+- to avoid **saving & restoring** a register whose value is never used, which might happen with a temporary register. 
+
+#question
+What is and what is not supported in procedures
+
+
+>[!Eg]
+>The procedure string_copy, copies string y to string x using null byte termination convention of C, the base address of x in x10 and y in x11 and index i is mapped to x9
+>```c
+>void str_cp (char  x[], y[])
+>{
+>	size_t t;
+>	t=0;
+>	while((x[i] = y[i]) != 0)
+>	{
+>		i+=1;
+>	}
+>}
+>```
+
+>[!Solution]
+>```asm
+>
+>.data
+>x:
+>y:
+>
+>.text
+>la x10, 0(x)
+>la x11, 0(y)
+>addi x9, x9, x0
+>
+>
+>strcp:
+>addi sp, sp, -4
+>sw x9, 0(sp)
+>addi x9, x0, 0
+>add x5, x11, x9
+>lbu x6, 0(x05)
+>
+>
+>```
+
 ## Leaf Procedures
 Compiled Riscv assembly procedure
 Assembly procedure should involve:
@@ -477,11 +521,23 @@ addi x21, x10, 0
 
 - SP -> Stack pointer used to indicate the allocated memory used by the stack. 
 
-LIFO
-=
+LIFO #important 
+
 
 There is no Dedicated Push and Pop instruction in RISC-V. #important 
 ### Push #search #todo 
 
 ### Pop #search #todo
 
+
+
+
+
+## Nested Subroutine
+
+
+there is a need for us to preserve the 
+
+
+Alternate Options are: #important #search #todo 
+- 
