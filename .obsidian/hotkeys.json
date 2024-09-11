@@ -8,14 +8,6 @@
       "key": "Enter"
     }
   ],
-  "editor:toggle-code": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "`"
-    }
-  ],
   "app:toggle-left-sidebar": [
     {
       "modifiers": [
@@ -30,6 +22,14 @@
         "Mod"
       ],
       "key": "]"
+    }
+  ],
+  "editor:insert-codeblock": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "`"
     }
   ]
 }

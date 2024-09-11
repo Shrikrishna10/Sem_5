@@ -11,8 +11,12 @@
             "id": "d619f405b842ecb0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Verif_elective2/Verif-Chp 3.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Verif_elective2/Verif-Chp 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Verif_elective2/Verif-Chp 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Verif_elective2/Verif-Chp 3.md"
+              }
             }
           }
         ]
@@ -151,24 +159,25 @@
   },
   "active": "d619f405b842ecb0",
   "lastOpenFiles": [
+    "Verif_elective2/memmodel/6.TB using Interface Ports Part 2/top.sv",
+    "Verif_elective2/memmodel/6.TB using Interface Ports Part 2/memory_rtl.sv",
+    "Verif_elective2/memmodel/6.TB using Interface Ports Part 2/work/@_opt/_lib5_0.qtl",
+    "Verif_elective2/memmodel/6.TB using Interface Ports Part 2/work/@_opt/_lib5_0.qpg",
+    "Verif_elective2/memmodel/6.TB using Interface Ports Part 2/work/@_opt/_lib5_0.qdb",
+    "Verif_elective2/memmodel/6.TB using Interface Ports Part 2/work/@_opt/_lib4_0.qtl",
+    "Verif_elective2/memmodel/6.TB using Interface Ports Part 2/work/@_opt/_lib4_0.qpg",
+    "Verif_elective2/memmodel/6.TB using Interface Ports Part 2/work/@_opt/_lib4_0.qdb",
+    "Verif_elective2/memmodel/6.TB using Interface Ports Part 2/work/@_opt/_lib3_0.qtl",
+    "Verif_elective2/memmodel/6.TB using Interface Ports Part 2/work/@_opt/_lib3_0.qpg",
+    "Verif_elective2/memmodel/6.TB using Interface Ports Part 2/work/@_opt/_lib3_0.qdb",
     "COD/lab/Lab4/Lab_4.md",
     "COD/lab/Lab5/Lab_5.md",
     "Vault.md",
     "Untitled.md",
-    "COD/lab/Lab5",
     "COD/lab/lab.md",
     "COD/notes/COD.md",
-    "Tags",
     "COD/notes/Missed shit.md",
-    "LIC_elective1/LT Spice/Summing.asc",
-    "LIC_elective1/LT Spice/LPF.asc",
-    "LIC_elective1/LT Spice/HPF.asc",
-    "LIC_elective1/LT Spice/Differential.asc",
-    "LIC_elective1/LT Spice",
     "Verif_elective2/Verif-Chp 3.md",
-    "Verif_elective2/memmodel/top.sv",
-    "Verif_elective2/memmodel/selfcheckingTB/tb.sv",
-    "Verif_elective2/memmodel/selfcheckingTB/run.do",
     "Verif_elective2/Verif.md",
     "Excalidraw/LIC.md",
     "Excalidraw/Drawing 2024-09-06 11.24.09.excalidraw.md",

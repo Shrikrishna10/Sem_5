@@ -258,7 +258,10 @@ Yes you can! #important
 - **It is only in the testbench**
 - It can't contain a program block in another program block -> basically no nested program blocks
 
-# A Verilog Memory Model - Self checking TB
+# A Verilog Memory Model - (Self checking TB)
+In this example code we will see the different types of tbs and understand it some are:
+- Self-checking tb
+- Testbench using Program block
 [this is in the drive ](https://drive.google.com/drive/folders/1SsxXIbtXRla13lG3l76FtCcjlMoJpLAn?usp=drive_link)
 
 >[!Question]
@@ -274,3 +277,39 @@ Yes you can! #important
 [Solution](https://www.edaplayground.com/x/WJM5)
 - this design follows asynchronous reset
 Go through the codes #todo 
+
+>[!Note] #important 
+>The Program block can't have a module and a DUT within it, even the generate clk.
+>All the module, DUT instantiations, even generate clk are done in the top module.
+>
+
+reg or wire can be used as a logic instead? #search 
+
+using program block-> https://www.edaplayground.com/x/eJX_ #edaplayground 
+
+
+# Interface block  #todo 
+>[!Note]
+>when we mismatch the ports in portmapping we dont get any sort of compile error and the code executes but the output will not match what you wanted
+
+no directions are not given in the interface block, 
+
+>[!Note] #important #isa
+>All the signal that are declared inside the Interface block are bi-directional, basically in-out.
+
+
+## Modport
+It defines the port direction that the module sees for the signals in the interface.
+- modport declarations don't contain vector sizes or types.
+- modport declarations only define whether the connecting module sees a signal as a input, output, bidirectional in-out, or ref port.
+
+>[!Syntax]
+>Legacy # 1
+>```sv
+>modport dutports(input,,,; output,,,)
+>modport tbports(input,,,; output,,,,)
+>```
+>Legacy # 2
+>```sv
+>
+>```
