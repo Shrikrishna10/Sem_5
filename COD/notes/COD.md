@@ -540,4 +540,54 @@ there is a need for us to preserve the
 
 
 Alternate Options are: #important #search #todo 
-- 
+
+
+# RISC-V Addressing for wide immediate & Addresses
+auipc: Add upper immediate value to PC(program counter) and place result in rd
+
+>[!Syntax]
+>```asm
+>auipc rd, imm[31:12]
+>```
+
+Eg:
+auipc x11, 0x10000
+
+PC = 0x00000 008
+	= 0x10000
+x11 = 0x10000 008
+
+basic idea-> PC + relative addressing
+
+## Use of auipc:
+### METHOD 1
+- It is used to calculate the base address of the symbol defined in the data segment using PC relative addressing mode.
+
+this is helpful with things where we have big stacks
+
+
+>[!Question]
+>Assume the base address of variable a in the data memory to be accessed is 0x80000020 & PC present is 0x00000000c write the program to initialize the base address in x11 without using psuedo instructions
+>
+
+>[!Solution]
+>```asm
+.data
+a: .word 0x12345678
+>
+.text
+la x10 (a)
+auipc x11, 0x8000
+addi x11 x11 0x018
+>```
+
+
+### METHOD 2
+- auipc used to calculate long target address of symbol beyond the range of jal
+>[!Question]
+>Assume address of symbol is 0x07FFF F018 and PC present = 0x00000 008, Write program change the control of execution to address of symbol.
+
+>[!Solution]
+>```asm
+>
+>```
