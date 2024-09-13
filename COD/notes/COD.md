@@ -591,3 +591,50 @@ addi x11 x11 0x018
 >```asm
 >
 >```
+
+# A simple Implementation scheme
+
+Control line status for subset of instruction.
+IMAGE #todo 
+4-bit ALU control input using a small control unit
+Multiple level of control - func field values are of interest and funct fields are used only when the ALUOp bits equal 10, we can use a small piece of logic that recognises the subset of possible values and generates the appropriate ALU of control signals.
+
+# Control Unit 
+Signals
+- opcode
+- ALUsrc
+- MemRead
+- MemWrite
+- MemToReg
+- Branch
+- RegWrite
+- ALUOp [1:0]
+	- and -> 0000
+	- or -> 0001
+	- add -> 0010
+	- sub -> 0110
+
+## Data-path & Control Unit
+### R-type instruction
+IMAGE #todo 
+#important 
+>[!Question]
+> Calculate the time taken to execute load, store, R-type n branch on input by considering the following time stamps:
+> - T_IF = 200ms (time for instruction fetch)
+> - T_ID = 100ms (time for instruction decoding)
+> - T_Ex = 200ms (time for execution)
+> - T_MEM = 200ms (time for memory access)
+> - T_WB = 100ms (time for write back)
+
+
+>[!Question]
+>Assume that logic blocks used to implement a processor's Single cycle datapath have the following latencies:
+>1. What is the latency of an R-type instruction (i.e. how long must the period be to ensure that this instruction works correctly.)?
+
+
+
+
+
+>[!Note]
+>1. Register read is the time needed after rising clock edge for the new register value to appear on the output. This value applies to the PC only
+>2. Register set-up is the amount of time a register's data input must be stable before the rising edge of the clock. This value applies to both the PC & Register file

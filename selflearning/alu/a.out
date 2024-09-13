@@ -1,0 +1,41 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x6332d62be810 .scope module, "fa1" "fa1" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "cin";
+    .port_info 3 /OUTPUT 1 "y";
+    .port_info 4 /OUTPUT 1 "out";
+o0x756aa0237048 .functor BUFZ 1, C4<z>; HiZ drive
+o0x756aa0237078 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x6332d62e1340 .functor XOR 1, o0x756aa0237048, o0x756aa0237078, C4<0>, C4<0>;
+L_0x6332d62e1400 .functor AND 1, o0x756aa0237048, o0x756aa0237078, C4<1>, C4<1>;
+o0x756aa02370a8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x6332d62e14f0 .functor XOR 1, L_0x6332d62e1340, o0x756aa02370a8, C4<0>, C4<0>;
+L_0x6332d62e15b0 .functor AND 1, L_0x6332d62e1340, o0x756aa02370a8, C4<1>, C4<1>;
+L_0x6332d62e16a0 .functor OR 1, L_0x6332d62e1400, L_0x6332d62e15b0, C4<0>, C4<0>;
+v0x6332d62be9a0_0 .net *"_ivl_6", 0 0, L_0x6332d62e15b0;  1 drivers
+v0x6332d62e0bb0_0 .net "a", 0 0, o0x756aa0237048;  0 drivers
+v0x6332d62e0c70_0 .net "b", 0 0, o0x756aa0237078;  0 drivers
+v0x6332d62e0d10_0 .net "cin", 0 0, o0x756aa02370a8;  0 drivers
+v0x6332d62e0dd0_0 .net "cout", 0 0, L_0x6332d62e16a0;  1 drivers
+v0x6332d62e0ee0_0 .net "g", 0 0, L_0x6332d62e1400;  1 drivers
+o0x756aa0237138 .functor BUFZ 1, C4<z>; HiZ drive
+v0x6332d62e0fa0_0 .net "out", 0 0, o0x756aa0237138;  0 drivers
+v0x6332d62e1060_0 .net "p", 0 0, L_0x6332d62e1340;  1 drivers
+v0x6332d62e1120_0 .net "s", 0 0, L_0x6332d62e14f0;  1 drivers
+o0x756aa02371c8 .functor BUFZ 1, C4<z>; HiZ drive
+v0x6332d62e11e0_0 .net "y", 0 0, o0x756aa02371c8;  0 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "fa1.v";
