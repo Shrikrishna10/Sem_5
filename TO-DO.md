@@ -1,5 +1,0 @@
-- [ ] Take chinnis notes and print it out.
-- [ ] upload emft notes 
-- [ ] get rtl to gds manuals 
-- [ ] finish emft formulas list 
-- [ ] 

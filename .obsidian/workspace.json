@@ -11,8 +11,12 @@
             "id": "1adb108bf7f31b66",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "COD/notes/COD.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "COD/notes/COD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "COD/notes/COD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "COD/notes/COD.md"
+              }
             }
           }
         ],
@@ -153,22 +161,25 @@
   "active": "1adb108bf7f31b66",
   "lastOpenFiles": [
     "TO-DO.md",
-    "COD/notes/Processor.md",
     "COD/notes/COD.md",
+    "Verif_elective2/resources_from_prof/1. Chris Spear, Greg Tumbush (auth.) - SystemVerilog for Verification_ A Guide to Learning the Testbench Language Features-Springer US (2012) (2).pdf",
+    "Verif_elective2/notes/Arbiter.md",
+    "Verif_elective2/notes/Verif-Chp 3.md",
+    "Verif_elective2/codes_from_class/arbiter/top.sv",
+    "Verif_elective2/codes_from_class/arbiter/arbiter_with_ports_tb.sv",
+    "Verif_elective2/codes_from_class/arbiter/arbiter_with_ports.sv",
+    "Verif_elective2/codes_from_class/arbiter",
+    "Verif_elective2/codes_from_class/top.sv",
+    "Verif_elective2/codes_from_class/arbiter_with_ports_tb.sv",
+    "Verif_elective2/codes_from_class/arbiter_with_ports.sv",
+    "Verif_elective2/codes_from_class",
+    "Pasted image 20240913110033.png",
+    "COD/notes/Processor.md",
     "selflearning/alu/fa1.sv",
-    "LIC_elective1/ISA1_resources/UE22EC342AB3_Unit1_Class1_3.pdf",
     "LIC_elective1/ISA1_resources/LIC.md",
     "LIC_elective1/LIC_Excalidraw.md",
     "LIC_elective1/ISA1_resources/LIC_Excalidraw.md",
-    "LIC_elective1/ISA1_resources/UE22EC342AB3_Unit1_Consolidated.pdf",
-    "LIC_elective1/ISA1_resources",
     "LIC_elective1/LIC.md",
-    "LIC_elective1/UE22EC342AB3_Unit1_Class1_3.pdf",
-    "selflearning/alu/a.out",
-    "selflearning/alu/obj_dir/Vfa1_classes.mk",
-    "selflearning/alu/obj_dir/Vfa1__Syms.h",
-    "selflearning/alu/obj_dir/Vfa1__Syms.cpp",
-    "selflearning/alu/obj_dir/Vfa1__Slow.cpp",
     "COD/notes/notes.md",
     "Excalidraw/LIC.md",
     "Verif_elective2/Verif-Chp 3.md",
@@ -187,8 +198,6 @@
     "CCN/lab/Lab4/Lab_4 observation.md",
     "Pasted image 20240904091736.png",
     "Pasted image 20240904091506.png",
-    "Verif-Chp 3.md",
-    "COD/lab/Lab3/Lab_3.md",
-    "COD/COD.md"
+    "Verif-Chp 3.md"
   ]
 }
