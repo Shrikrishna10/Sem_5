@@ -638,3 +638,4 @@ IMAGE #todo
 >[!Note]
 >1. Register read is the time needed after rising clock edge for the new register value to appear on the output. This value applies to the PC only
 >2. Register set-up is the amount of time a register's data input must be stable before the rising edge of the clock. This value applies to both the PC & Register file
+>3. 
