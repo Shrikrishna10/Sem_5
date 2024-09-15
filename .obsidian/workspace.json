@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Revision for ISA-1.md",
+                "file": "CCN/notes/CCN-self.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "291a58397c3ebc75",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Revision for ISA-1.md",
+                "file": "CCN/notes/CCN-self.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Revision for ISA-1.md",
+                "file": "CCN/notes/CCN-self.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Revision for ISA-1.md"
+                "file": "CCN/notes/CCN-self.md"
               }
             }
           }
@@ -160,8 +159,10 @@
   },
   "active": "c6b718712f81b492",
   "lastOpenFiles": [
-    "COD/notes/COD.md",
     "Revision for ISA-1.md",
+    "CCN/notes/CCN-self.md",
+    "CCN/notes",
+    "COD/notes/COD.md",
     "TO-DO.md",
     "Verif_elective2/resources_from_prof/1. Chris Spear, Greg Tumbush (auth.) - SystemVerilog for Verification_ A Guide to Learning the Testbench Language Features-Springer US (2012) (2).pdf",
     "Verif_elective2/notes/Arbiter.md",
@@ -176,7 +177,6 @@
     "Verif_elective2/codes_from_class",
     "Pasted image 20240913110033.png",
     "COD/notes/Processor.md",
-    "selflearning/alu/fa1.sv",
     "LIC_elective1/ISA1_resources/LIC.md",
     "LIC_elective1/LIC_Excalidraw.md",
     "LIC_elective1/ISA1_resources/LIC_Excalidraw.md",
@@ -198,7 +198,6 @@
     "Pasted image 20240904101024.png",
     "CCN/lab/Lab4/Lab_4 observation.md",
     "Pasted image 20240904091736.png",
-    "Pasted image 20240904091506.png",
-    "Verif-Chp 3.md"
+    "Pasted image 20240904091506.png"
   ]
 }
