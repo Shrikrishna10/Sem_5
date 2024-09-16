@@ -49,8 +49,9 @@
     "//COD/COD/lab",
     "//COD/COD/lab/COD/lab/Lab4",
     "//CCN",
-    "//CCN/CCN/lab",
-    "//CCN/CCN/lab/CCN/lab/Lab4"
+    "//CCN/CCN/lab/CCN/lab/Lab4",
+    "//CCN/CCN/resources_from_prof/CCN/resources_from_prof/Unit 1",
+    "//CCN/CCN/resources_from_prof"
   ],
   "expandFolderOnClick": true,
   "menuTriggerChar": "/",

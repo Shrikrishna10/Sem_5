@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9f52569baaf5ba98",
+        "id": "f5e5a7672ed797cc",
         "type": "tabs",
         "children": [
           {
-            "id": "c6b718712f81b492",
+            "id": "d7bc9f031afa5d96",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -73,11 +73,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 399.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "291a58397c3ebc75",
@@ -157,10 +159,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c6b718712f81b492",
+  "active": "d7bc9f031afa5d96",
   "lastOpenFiles": [
-    "Revision for ISA-1.md",
+    "Pasted image 20240915180352.png",
+    "Pasted image 20240915180311.png",
     "CCN/notes/CCN-self.md",
+    "Pasted image 20240915164611.png",
+    "CCN/resources_from_prof/Unit 1/Class 1 Internet - Introduction & Terminology.pdf",
+    "CCN/resources_from_prof/Unit 1/CLASS 14- Web and HTTP Message formats.pdf",
+    "Revision for ISA-1.md",
     "CCN/notes",
     "COD/notes/COD.md",
     "TO-DO.md",
@@ -173,8 +180,6 @@
     "Verif_elective2/codes_from_class/arbiter",
     "Verif_elective2/codes_from_class/top.sv",
     "Verif_elective2/codes_from_class/arbiter_with_ports_tb.sv",
-    "Verif_elective2/codes_from_class/arbiter_with_ports.sv",
-    "Verif_elective2/codes_from_class",
     "Pasted image 20240913110033.png",
     "COD/notes/Processor.md",
     "LIC_elective1/ISA1_resources/LIC.md",
@@ -196,7 +201,6 @@
     "COD/notes/Computer Organisation and Design.md",
     "delete later .md",
     "Pasted image 20240904101024.png",
-    "CCN/lab/Lab4/Lab_4 observation.md",
     "Pasted image 20240904091736.png",
     "Pasted image 20240904091506.png"
   ]
