@@ -45,13 +45,11 @@
   "deleteFileOption": "trash",
   "expandedSpaces": [
     "/",
-    "//COD/COD/notes",
-    "//COD/COD/lab",
     "//COD/COD/lab/COD/lab/Lab4",
-    "//CCN",
     "//CCN/CCN/lab/CCN/lab/Lab4",
     "//CCN/CCN/resources_from_prof/CCN/resources_from_prof/Unit 1",
-    "//CCN/CCN/resources_from_prof"
+    "//CCN/CCN/resources_from_prof",
+    "//LIC_elective1/LIC_elective1/ISA1_resources"
   ],
   "expandFolderOnClick": true,
   "menuTriggerChar": "/",

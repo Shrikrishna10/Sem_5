@@ -72,3 +72,67 @@ One way is to describe the nuts and bolts of the Internet, that is, **the basic 
 -  #todo not sure if it is important moving on 
 
 # How does the internet provide services for distributed applications? 
+- Distributed means that the applications run independently on the host or end systems.
+- **Messages** are exchanged by the hosts using the **internet socket interfaces** of their respective applications
+- **Protocols define the format & the order of messages exchanged between 2 or more hosts.** #important 
+- **Protocols** also define the actions taken on the transmission &/or receipt of a message or other event.
+- **Services**(eg. Reliability, guaranteed rate) are provided by the hardware or software associated with the devices.
+- ![[Pasted image 20240916123137.png]]
+
+# Network Edge
+- Computer networks that sit on the **periphery of the internet** constitute the **network edge** or the **access network**. 
+- End-systems can be further classified as **clients & servers**.
+- **Router** which connect an access network to a regional/access ISP is referred to as **gateway**.
+- **Access network nomenclature**
+- Based on size: Local are networks(LAN), home networks, wide area networks(WAN), etc.
+- Based on Physical media: Free space(wireless) or Wired - DSL, Cable, Fibre.
+
+## Home Access Network
+- The devices in the home are connected to the internet via a LAN or Wifi router.
+- Different physical media could be provided by different access ISPs to connect the home network with the internet.
+- Below is an eg. of a home network. This network consists of a laptop, multiple internet-connected devices who is being supplied by one router.
+- ![[Pasted image 20240916173110.png]]
+	- A **home router** that connects the wireless access point, & any other **wired home devices** to the internet.
+	- This network allows household members to have **broadband access** to the internet with one member roaming from the kitchen to the backyard to the bedrooms.
+- ![[Pasted image 20240916173056.png]]
+	- Above is a general architecture of a network
+
+
+## DSL
+DSL -> Digital Subscriber line
+![[Pasted image 20240916193347.png]]
+
+### DSL Internet access
+![[Pasted image 20240916193522.png]]
+- DSL is used when a customer's telephone company is also its ISP.
+- Each Customer's DSL modem uses the existing telephone line exchange data with a digital subscriber line access multiplexer (DSLAM) located in telephone company's local central office.
+- The home's DSL modem takes digital data & translates it into high freq. tones for transmission over telephone wires to the CO; 
+- The analogue signals from many such houses are translated back into digital format at the DSLAM.
+- A hybrid fibre coaxial access network: Fibre Optics connect the cable head end to neighbourhood-lvl junctions, from which traditional coaxial cable is then used to reach individual houses.
+- Each of these junctions support upto 5K homes, both fibre & coaxial cable are employed in this system which gives it the name **Hybrid Fibre Coax**.
+- ![[Screenshot from 2024-09-16 19-45-14.png]]
+- Above is a representation.
+- At the cable head end, the **cable modem termination system(CMTS)** serves a similar function as the DSL network's DSLAM - turn the analogue signal sent from the cable modems in many downstream homes back into digital format.
+- Below figure shows **Fibre to the Home(FTTH)** using **Passive Optical Networks(PON)** distributed architecture.
+- ![[Pasted image 20240916201851.png]]
+- Each home has an **optical network Terminator(OLT)** which is connected by dedicated optical fibre to a neighbourhood splitter.
+- Splitters combine a number of homes into a single shared optical fibre, which connects to an OLT in the telephone company's central office.
+- The OLT, providing the conversion between optical & electrical signals, connects to the internet via a telco router.
+
+## Enterprise Access networks
+- ISP can be telecom operator
+- Built using Ethernet Cables, switches & hubs
+- Ethernet switches are preferred over routers in a LAN
+- Routers are used for separating the network into subnets
+- ![[Pasted image 20240916202753.png]]
+- Ethernet users use the twist-pair Cu wires to connect to an Ethernet switch.
+- The Ethernet switch, or a network or such interconnected switches is then connected into the larger internet.
+- Ethernet has a varied speeds for transmission.
+
+## Wireless Networks
+- Wifi or Cellular based.
+- Classified according to radio access technologies
+	- Spread spectrum, freq. hoping, random access, polling methods, etc.
+- They are supported by ISPs and span from a few meters to several kilometers.
+- Wireless networks have undergone tremendous evolution recently due to the spike in users.
+- 
