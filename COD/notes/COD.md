@@ -550,6 +550,14 @@ Alternate Options are: #important #search #todo
 **Recursive Procedures** -> Procedures that invoke clones of themselves.
 - go through the C recursion code and understand the process.
 
+>[!Question]
+>Write a C code to find the factorial using recursion, after which write a machine code to do the same as the C code.
+
+>[!Question]
+>Write a program to compute C0= d0^ d1^ d4^ d5^ d7, where d0, d1, d4, d5, d7 are the bits of a given byte
+
+other questions that we might encounter for the isa are simple arithmetic boolean functions
+
 
 
 # RISC-V Addressing for wide immediate & Addresses
