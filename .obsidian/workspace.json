@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Verif_elective2/notes/Verif-Chp 5.md",
+                "file": "COD/self/Revision for ISA-1 - COD.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "61bf27edff27e491",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "COD/notes/COD.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -95,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Verif_elective2/notes/Verif-Chp 5.md",
+                "file": "COD/notes/COD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Verif_elective2/notes/Verif-Chp 5.md",
+                "file": "COD/notes/COD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Verif_elective2/notes/Verif-Chp 5.md"
+                "file": "COD/notes/COD.md"
               }
             }
           }
@@ -159,12 +172,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "44dd899e7e278dfe",
+  "active": "61bf27edff27e491",
   "lastOpenFiles": [
+    "COD/self/Revision for ISA-1 - COD.md",
+    "COD/notes/COD.md",
+    "Verif_elective2/notes/Verif-Chp 5.md",
     "Verif_elective2/resources_from_prof/2. Chapter 5 PPTs.pdf",
     "Verif_elective2/Verif_elective2.md",
     "Verif_elective2/notes/Verif-Chp 3.md",
-    "Verif_elective2/notes/Verif-Chp 5.md",
     "CCN/notes/CCN-self.md",
     "Pasted image 20240916202753.png",
     "Pasted image 20240916201851.png",
@@ -182,14 +197,11 @@
     "LIC_elective1/textbooks",
     "LIC_elective1/OperationalAmplifiersAndLinearICs_3E.pdf",
     "LIC_elective1/Carter B., Mancini R. - Op Amps for Everyone-Elsevier Inc., Newnes (2018).pdf",
-    "COD/self/Revision for ISA-1 - COD.md",
     "COD/self",
     "COD/Revision for ISA-1 - COD.md",
     "Vault.md",
     "Pasted image 20240915164611.png",
-    "LIC_elective1/ISA1_resources/UE22EC343AB3_Unit2_Consolidated.pdf",
     "Pasted image 20240915180352.png",
-    "COD/notes/COD.md",
     "TO-DO.md",
     "Verif_elective2/notes/Arbiter.md",
     "COD/notes/Processor.md",

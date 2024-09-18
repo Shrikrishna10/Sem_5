@@ -542,6 +542,16 @@ there is a need for us to preserve the
 Alternate Options are: #important #search #todo 
 
 
+
+# Recursion
+
+## Nested Procedures - Recursive Procedures
+**Nested Procedures**-> Procedures that invoke other procedures.
+**Recursive Procedures** -> Procedures that invoke clones of themselves.
+- go through the C recursion code and understand the process.
+
+
+
 # RISC-V Addressing for wide immediate & Addresses
 auipc: Add upper immediate value to PC(program counter) and place result in rd
 
@@ -638,4 +648,5 @@ IMAGE #todo
 >[!Note]
 >1. Register read is the time needed after rising clock edge for the new register value to appear on the output. This value applies to the PC only
 >2. Register set-up is the amount of time a register's data input must be stable before the rising edge of the clock. This value applies to both the PC & Register file
->3. 
+
+

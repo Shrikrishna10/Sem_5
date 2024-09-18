@@ -54,4 +54,5 @@ add x24 x24 x22
 - [ ] understand the sizes of data shit in arrays.
 - [ ] need to understand how the 32 bits are stored in those 12 bit spaces
 
-
+# Recursion
+nested subroutines 
