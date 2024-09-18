@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCN/notes/CCN-self.md",
+                "file": "Verif_elective2/notes/Verif-Chp 5.md",
                 "mode": "source",
                 "source": false
               }
@@ -66,7 +66,7 @@
             }
           },
           {
-            "id": "36ddbd885115f32d",
+            "id": "3b19afe4fd850c91",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -74,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCN/notes/CCN-self.md",
+                "file": "Verif_elective2/notes/Verif-Chp 5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCN/notes/CCN-self.md",
+                "file": "Verif_elective2/notes/Verif-Chp 5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCN/notes/CCN-self.md"
+                "file": "Verif_elective2/notes/Verif-Chp 5.md"
               }
             }
           }
@@ -161,10 +161,14 @@
   },
   "active": "44dd899e7e278dfe",
   "lastOpenFiles": [
+    "Verif_elective2/resources_from_prof/2. Chapter 5 PPTs.pdf",
+    "Verif_elective2/Verif_elective2.md",
+    "Verif_elective2/notes/Verif-Chp 3.md",
+    "Verif_elective2/notes/Verif-Chp 5.md",
+    "CCN/notes/CCN-self.md",
     "Pasted image 20240916202753.png",
     "Pasted image 20240916201851.png",
     "Screenshot from 2024-09-16 19-45-14.png",
-    "CCN/notes/CCN-self.md",
     "Pasted image 20240916193522.png",
     "Pasted image 20240916193347.png",
     "LIC_elective1/textbooks/Carter B., Mancini R. - Op Amps for Everyone-Elsevier Inc., Newnes (2018).pdf",
@@ -185,11 +189,9 @@
     "Pasted image 20240915164611.png",
     "LIC_elective1/ISA1_resources/UE22EC343AB3_Unit2_Consolidated.pdf",
     "Pasted image 20240915180352.png",
-    "Pasted image 20240915180311.png",
     "COD/notes/COD.md",
     "TO-DO.md",
     "Verif_elective2/notes/Arbiter.md",
-    "Verif_elective2/notes/Verif-Chp 3.md",
     "COD/notes/Processor.md",
     "LIC_elective1/ISA1_resources/LIC.md",
     "LIC_elective1/LIC_Excalidraw.md",
@@ -204,8 +206,6 @@
     "COD/notes/Missed shit.md",
     "Verif_elective2/Verif.md",
     "Excalidraw/Drawing 2024-09-06 11.24.09.excalidraw.md",
-    "September COD.md",
-    "COD/notes/9-08-24 The Processor.md",
-    "COD/notes/Computer Organisation and Design.md"
+    "September COD.md"
   ]
 }

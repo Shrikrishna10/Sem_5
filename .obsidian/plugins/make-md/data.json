@@ -49,7 +49,8 @@
     "//CCN/CCN/lab/CCN/lab/Lab4",
     "//CCN/CCN/resources_from_prof/CCN/resources_from_prof/Unit 1",
     "//CCN/CCN/resources_from_prof",
-    "//LIC_elective1/LIC_elective1/ISA1_resources"
+    "//LIC_elective1/LIC_elective1/ISA1_resources",
+    "//Verif_elective2"
   ],
   "expandFolderOnClick": true,
   "menuTriggerChar": "/",
