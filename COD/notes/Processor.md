@@ -9,4 +9,3 @@ made some basic ALU 1 bit MUX 4 bits for 2 inputs and a REG for 4 bits
 #search need to learn everything that is being done right now 
 
 #important typical one marker is to ask which stage or ---- is idle
-

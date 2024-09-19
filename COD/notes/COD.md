@@ -24,6 +24,7 @@ in the store instruction the destination operand is a data memory
 >addi rd, x0, imm
 >```
 
+
 # Operands of the Computer Hw
 ## Operand Location: *physical location in the computer*
 
@@ -657,4 +658,43 @@ IMAGE #todo
 >1. Register read is the time needed after rising clock edge for the new register value to appear on the output. This value applies to the PC only
 >2. Register set-up is the amount of time a register's data input must be stable before the rising edge of the clock. This value applies to both the PC & Register file
 
+
+
+# Pipeline
+
+
+- classification of control lines for the final 3 stages.
+
+
+# Data Hazards
+#important 
+**When a planned instruction cannot execute in the proper clock cycle because datat that are needed to execute the instruction are not yet available.**
+	It is also called **pipeline data hazard**
+## Forwarding vs Stalling
+
+##### Eg:
+>[!Question]
+>Assume the following sequence of instructions are executed in 5 stage pipelined datapath
+>```asm
+>add x15, x12, x11
+>lw x13, 8(x15)
+>lw x12, 0(x13)
+>or x13, x15, x13
+>sw x13, 0(x15)
+>```
+
+>[!Solution]
+>```asm
+>add x15, x12, x11
+>nop
+>nop
+>lw x13, 8(x15)
+>lw x12, 0(x13)
+>nop
+>or x13, x15, x13
+>nop
+>nop
+>sw x13, 0(x15)
+>```
+>here there are dependencies based on whether the register is the source or destination register. There should be a gap of 2 cycles or instructions before you encounter the same register if the previous use case was a destination & the current use case is source. #important 
 

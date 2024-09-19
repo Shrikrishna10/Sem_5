@@ -65,3 +65,34 @@ The most privileged code runs in “Ring 0” and has access to the entire syste
 RISC-V has three privilege levels: User Mode (U-mode), Supervisor Mode (S-mode), and Machine Mode (M-mode). One can think of these as “Ring 2”, “Ring 1”, and “Ring 0” respectively. Other modes like a hypervisor mode (H-Mode) are available as variations of these 3 basic modes.
 
 Much like in the figure above, U-mode is for user processes, S-mode is for kernel and/or device drivers, and M-mode is used for bootloader and/or firmware. Each privilege level has access to specific Control and Status Registers (CSRs), which are special registers that report the state of the system, or control its behaviour. Higher privilege levels can access the CSRs of less privileged levels.
+
+
+
+
+# RV32I Base instruction set
+
+There are only 40 instructions in RV, so all functionality needs to be achieved with that and another limitation being the number of bits in register data size being 32 for RV32.
+
+The Base ISA also specifies the 32 cpu register which are 32 bits in size, + a program counter.
+
+The only special register in the 32 is x0 which is grounded and always holds the value of 0 in all positions. The other registers dont necessarily hold specific values and are general purpose, we have something known as **ABI** which stands for application binary interface which specifies a purpose for all the register according to its *calling convention* #search . 
+
+This means that some registers are expected to hold particular values such as:
+- temp
+- saved data
+- pointers
+- return address, 
+etc. The table below shows em
+![[Pasted image 20240919110615.png]]
+
+
+### A few of the important instructions encoded in the are 
+#### Addition
+#### Subtraction
+#### Bit-wise logical operations
+#### Load & store
+#### Jumps
+#### Branches
+
+
+# Control & Status Register(CSRs)
