@@ -11,11 +11,9 @@
             "id": "04234bf6a85a113b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "COD/notes/COD.md",
-                "mode": "source",
-                "source": false
+                "file": "COD/resources_from_prof/ISA1/COD_RISCV_ Unit 1.pdf"
               }
             }
           },
@@ -116,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COD/notes/COD.md",
+                "file": "COD/resources_from_prof/ISA1/COD_RISCV_ Unit 1.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COD/notes/COD.md",
+                "file": "COD/resources_from_prof/ISA1/COD_RISCV_ Unit 1.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COD/notes/COD.md"
+                "file": "COD/resources_from_prof/ISA1/COD_RISCV_ Unit 1.pdf"
               }
             }
           }
@@ -182,14 +180,14 @@
   },
   "active": "04234bf6a85a113b",
   "lastOpenFiles": [
+    "COD/notes/COD.md",
+    "COD/resources_from_prof/ISA1/UNIT2_COD_2024.pdf",
     "selflearning/RISC-V.md",
     "COD/notes/Processor.md",
     "COD/notes/Notes- from_ppt.md",
-    "COD/notes/COD.md",
     "Pasted image 20240919110615.png",
     "COD/notes/Computer Organisation and Design.md",
     "COD/notes/9-08-24 The Processor.md",
-    "COD/resources_from_prof/ISA1/UNIT2_COD_2024.pdf",
     "LIC_elective1/ISA1_resources/LIC_Excalidraw.md",
     "LIC_elective1/ISA1_resources/LIC.md",
     "COD/resources_from_prof/ISA1/COD_RISCV_ Unit 1.pdf",
