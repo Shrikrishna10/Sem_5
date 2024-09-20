@@ -106,5 +106,26 @@ Some of the Important CSRs are:
 5. **misa** (Machine ISA Register): Specifies the supported instruction set extensions for the processor, allowing software to determine the capabilities of the RISC-V processor. It also encodes the bit width of the base ISA (RV32, RV64, or RV128).
 These CSRs are fundamental for the operation of a RISC-V processor, enabling privilege mode control, exception handling, and providing information about the processor's capabilities and recent events. There are many more CSRs that serve important functions, these five are among the most critical for basic processor operation and software development.
 
-# ISA Extension
+# ISA Extensions
+## M Extension
+This extension if for multiplication. It has 8 instructions to perform multiplication and division on integers.
 
+>[!Note]
+>It may seem odd that this extension is not required. However, for many embedded processors, multiplication can be done in software if it is not required very often or even at all.
+
+## F Extension
+This extension adds support for single-precision floating-point arithmetic operations.  Single-precision floating-point are typically represented using 32 bits, conforming to the IEEE 754 standard.
+
+This extension introduces single-precision floating-point registers (**f0** to **f31**) and a set of single-precision floating-point instructions for operations such as addition, subtraction, multiplication, division, and conversions between integer and single-precision floating-point values.
+The F extension also includes instructions for handling special values, like NaN (Not-a-Number) and infinities, and for comparing and rounding single-precision values.
+
+
+## D Extension
+D for Double
+This extension extends the floating poit capabilities of RISC-V to include double-precision floating point arithmetic operations. Double-precision use 64 bits for representation & also follow the IEEE 754 standard for double-precision arithmetic.
+
+With the D extension, double-precision floating-point registers **f0** to **f31** are now 64-bit wide, and it supports instructions for double-precision arithmetic operations, conversions between integer and double-precision values, and handling special values.
+Double-precision arithmetic is particularly important for scientific and engineering applications that require higher precision than single-precision arithmetic can provide.
+Again, many embedded applications do not require floating point logic, and hence these extensions are not part of the Base ISAs.
+
+## C Extension

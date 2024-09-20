@@ -699,4 +699,13 @@ IMAGE #todo
 >here there are dependencies based on whether the register is the source or destination register. There should be a gap of 2 cycles or instructions before you encounter the same register if the previous use case was a destination & the current use case is source. #important 
 
 
+Missed quite a few things #todo #search 
 
+
+>[!Question]
+>Consider following sequences of instructions:
+>lw x2, x1, x3
+>and x12, x2, x5
+
+>[!Solution]
+>
