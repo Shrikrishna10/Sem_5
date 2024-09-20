@@ -129,3 +129,6 @@ Double-precision arithmetic is particularly important for scientific and enginee
 Again, many embedded applications do not require floating point logic, and hence these extensions are not part of the Base ISAs.
 
 ## C Extension
+The compressed instruction set extension is a clever addition to the RISC-V ISA, which provides an alternative 16-bit encoding for a special subset of existing instructions, reducing static and dynamic code size. 
+
+
