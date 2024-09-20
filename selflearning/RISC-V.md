@@ -96,3 +96,15 @@ etc. The table below shows em
 
 
 # Control & Status Register(CSRs)
+CSRs are a separate bank of registers that are 12-bits in size that contains CPU info like counter, timers, flags, manufacturer info & other data.
+**CSRs are special registers designed to control and monitor the processor's operation.**
+Some of the Important CSRs are:
+1. **mstatus** (Machine Status Register): This CSR is arguably the most critical one as it controls and monitors the machine's operating mode and privilege level. It contains fields for controlling interrupt enable/disable status, setting the privilege level (M-mode, S-mode, U-mode), and various flags that influence the processor's behavior. It is fundamental for privilege level transitions and interrupt management.
+2. **mepc** (Machine Exception Program Counter): Stores the program counter value of the instruction that caused an exception or interrupt in machine mode. It determines where the program should resume execution after handling the exception.
+3. **mtvec** (Machine Trap-Vector Base Address): Specifies the base address of the trap handler for machine mode, determining where the processor should jump to when an exception occurs.
+4. **mcause** (Machine Cause Register): This CSR provides information about the reason for the most recent exception or interrupt. It distinguishes between exceptions and interrupts and gives a code indicating the specific cause, such as a page fault or a software interrupt.
+5. **misa** (Machine ISA Register): Specifies the supported instruction set extensions for the processor, allowing software to determine the capabilities of the RISC-V processor. It also encodes the bit width of the base ISA (RV32, RV64, or RV128).
+These CSRs are fundamental for the operation of a RISC-V processor, enabling privilege mode control, exception handling, and providing information about the processor's capabilities and recent events. There are many more CSRs that serve important functions, these five are among the most critical for basic processor operation and software development.
+
+# ISA Extension
+
