@@ -11,8 +11,28 @@
             "id": "7fdde2660a664cb1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "pdf",
+              "state": {
+                "file": "COD/resources_from_prof/ISA1/COD_RISCV_ Unit 1.pdf"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "aa0edeb340f0cd68",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8ce585757cb4d144",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "COD/notes/ISA-prep.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -91,6 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "COD/notes/ISA-prep.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,6 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "COD/notes/ISA-prep.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +150,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "COD/notes/ISA-prep.md"
+              }
             }
           }
         ],
@@ -151,33 +175,34 @@
       "daily-notes:Open today's daily note": false
     }
   },
-  "active": "7fdde2660a664cb1",
+  "active": "8ce585757cb4d144",
   "lastOpenFiles": [
+    "Pasted image 20240921191820.png",
+    "Pasted image 20240921190036.png",
+    "Pasted image 20240921182449.png",
+    "Pasted image 20240921182041.png",
+    "COD/resources_from_prof/ISA1/COD_RISCV_ Unit 1.pdf",
+    "COD/notes/ISA-prep.md",
+    "Pasted image 20240921120626.png",
+    "Pasted image 20240921120600.png",
+    "Pasted image 20240921120418.png",
+    "Pasted image 20240921120153.png",
+    "Pasted image 20240921115826.png",
+    "Pasted image 20240921115748.png",
+    "COD/notes/COD.md",
     "Verif_elective2/resources_from_prof/2. Chapter 5 PPTs.pdf",
     "Verif_elective2/notes/Verif- Chp 1 & 2.md",
     "fold all.md",
     "Verif_elective2/notes/Verif-Chp 5.md",
     "Verif_elective2/resources_from_prof/1. Chris Spear, Greg Tumbush (auth.) - SystemVerilog for Verification_ A Guide to Learning the Testbench Language Features-Springer US (2012) (2).pdf",
     "selflearning/RISC-V LDF110.md",
-    "COD/notes/COD.md",
     "Verif_elective2/notes/Verif.md",
     "Screenshots/Screenshot from 2024-09-16 19-45-14.png",
-    "Screenshots/Pasted image 20240919110615.png",
-    "Screenshots/Pasted image 20240916202753.png",
-    "Screenshots/Pasted image 20240916201851.png",
-    "Screenshots/Pasted image 20240916193522.png",
-    "Screenshots/Pasted image 20240916193347.png",
-    "Screenshots/Pasted image 20240916173110.png",
-    "Screenshots/Pasted image 20240916173056.png",
-    "Screenshots/Pasted image 20240916123137.png",
-    "Screenshots/Pasted image 20240915180352.png",
     "Screenshots",
     "screenshots",
     "2024-09-20.md",
     "COD/resources_from_prof/ISA1/UNIT2_COD_2024.pdf",
-    "COD/resources_from_prof/ISA1/COD_RISCV_ Unit 1.pdf",
     "COD/notes/Processor.md",
-    "COD/notes/Notes- from_ppt.md",
     "COD/notes/Computer Organisation and Design.md",
     "COD/notes/9-08-24 The Processor.md",
     "LIC_elective1/ISA1_resources/LIC_Excalidraw.md",
