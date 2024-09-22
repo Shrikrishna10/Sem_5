@@ -4,38 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "7d4b87893231a6db",
+        "id": "ba7cedb8db7aedc9",
         "type": "tabs",
         "children": [
           {
-            "id": "7fdde2660a664cb1",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "COD/resources_from_prof/ISA1/COD_RISCV_ Unit 1.pdf"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "aa0edeb340f0cd68",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8ce585757cb4d144",
+            "id": "64cc944f678ab3ae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COD/notes/ISA-prep.md",
+                "file": "CCN/notes/CCN-self.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "99385adb150d1150",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CCN/notes/CCN ISA1 QB.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -111,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COD/notes/ISA-prep.md",
+                "file": "CCN/notes/CCN ISA1 QB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COD/notes/ISA-prep.md",
+                "file": "CCN/notes/CCN ISA1 QB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COD/notes/ISA-prep.md"
+                "file": "CCN/notes/CCN ISA1 QB.md"
               }
             }
           }
@@ -175,20 +172,31 @@
       "daily-notes:Open today's daily note": false
     }
   },
-  "active": "8ce585757cb4d144",
+  "active": "99385adb150d1150",
   "lastOpenFiles": [
-    "Pasted image 20240921191820.png",
-    "Pasted image 20240921190036.png",
-    "Pasted image 20240921182449.png",
-    "Pasted image 20240921182041.png",
-    "COD/resources_from_prof/ISA1/COD_RISCV_ Unit 1.pdf",
+    "CCN/notes/notes.md",
+    "CCN/notes/CCN ISA1 QB.md",
+    "CCN/resources_from_prof/U1QA.pdf",
+    "CCN/resources_from_prof/Tutorials_CN_2 (1).pdf",
+    "Tutorials_CN_2 (1).pdf",
+    "Screenshots/Pasted image 20240921191820.png",
+    "Screenshots/Pasted image 20240921190036.png",
+    "Screenshots/Pasted image 20240921182449.png",
+    "Screenshots/Pasted image 20240921182041.png",
+    "Screenshots/Pasted image 20240921120626.png",
+    "Screenshots/Pasted image 20240921120600.png",
+    "Screenshots/Pasted image 20240921120418.png",
+    "Screenshots/Pasted image 20240921120153.png",
+    "Screenshots/Pasted image 20240921115826.png",
+    "Screenshots/Pasted image 20240921115748.png",
+    "CCN/CCN.md",
+    "Vault.md",
+    "CCN/notes/CCN-self.md",
+    "CCN/resources_from_prof/U1QB2.pdf",
+    "CCN/resources_from_prof/U1QB1.pdf",
+    "Excalidraw/Drawing 2024-09-22 09.42.19.excalidraw.md",
     "COD/notes/ISA-prep.md",
-    "Pasted image 20240921120626.png",
-    "Pasted image 20240921120600.png",
-    "Pasted image 20240921120418.png",
-    "Pasted image 20240921120153.png",
-    "Pasted image 20240921115826.png",
-    "Pasted image 20240921115748.png",
+    "COD/resources_from_prof/ISA1/COD_RISCV_ Unit 1.pdf",
     "COD/notes/COD.md",
     "Verif_elective2/resources_from_prof/2. Chapter 5 PPTs.pdf",
     "Verif_elective2/notes/Verif- Chp 1 & 2.md",
@@ -197,31 +205,19 @@
     "Verif_elective2/resources_from_prof/1. Chris Spear, Greg Tumbush (auth.) - SystemVerilog for Verification_ A Guide to Learning the Testbench Language Features-Springer US (2012) (2).pdf",
     "selflearning/RISC-V LDF110.md",
     "Verif_elective2/notes/Verif.md",
-    "Screenshots/Screenshot from 2024-09-16 19-45-14.png",
     "Screenshots",
     "screenshots",
     "2024-09-20.md",
-    "COD/resources_from_prof/ISA1/UNIT2_COD_2024.pdf",
     "COD/notes/Processor.md",
     "COD/notes/Computer Organisation and Design.md",
     "COD/notes/9-08-24 The Processor.md",
     "LIC_elective1/ISA1_resources/LIC_Excalidraw.md",
     "LIC_elective1/ISA1_resources/LIC.md",
-    "COD/resources_from_prof/ISA1/not_upto_date/UNIT2_COD_2024.pdf",
-    "COD/resources_from_prof/ISA1/not_upto_date/COD_RISCV_ Unit 1.pdf",
-    "COD/resources_from_prof/ISA1/not_upto_date/COD_RISCV_ Unit 1_nw.pdf",
-    "COD/resources_from_prof/ISA1/not_upto_date",
     "COD/self/Revision for ISA-1 - COD.md",
     "Verif_elective2/Verif_elective2.md",
     "Verif_elective2/notes/Verif-Chp 3.md",
-    "CCN/notes/CCN-self.md",
     "COD/Revision for ISA-1 - COD.md",
-    "Vault.md",
     "TO-DO.md",
-    "Verif_elective2/notes/Arbiter.md",
-    "LIC_elective1/LIC_Excalidraw.md",
-    "LIC_elective1/LIC.md",
-    "Excalidraw/LIC.md",
-    "Verif_elective2/Verif-Chp 3.md"
+    "Verif_elective2/notes/Arbiter.md"
   ]
 }
