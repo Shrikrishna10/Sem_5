@@ -1,3 +1,20 @@
+# Abbreviations
+ISP -> Internet Service Provider
+CO -> Central Office
+DSL -> Digital Subscriber line
+DSAM -> DSL Access Multiplexer
+TDM -> Time Division Multiplexing
+FDM -> Frequency(freq.) Division Multiplexing
+
+IP -> Internet Protocol
+TCP -> Transmission Control Protocol
+OSI -> Open System Interconnect
+MAC -> Media Access Control
+
+
+QoS -> Quality of Service
+
+
 # What is a Network?
 A network is simply defined as an arrangement of intersecting horizontal and vertical lines.
 - But our definitions can be tailored in such a fashion as follows:
@@ -135,4 +152,5 @@ DSL -> Digital Subscriber line
 	- Spread spectrum, freq. hoping, random access, polling methods, etc.
 - They are supported by ISPs and span from a few meters to several kilometers.
 - Wireless networks have undergone tremendous evolution recently due to the spike in users.
-- 
+
+# Protocol Layers

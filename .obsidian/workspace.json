@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCN/notes/CCN ISA1 QB.md",
+                "file": "CCN/notes/CCN-self.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCN/notes/CCN ISA1 QB.md",
+                "file": "CCN/notes/CCN-self.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCN/notes/CCN ISA1 QB.md"
+                "file": "CCN/notes/CCN-self.md"
               }
             }
           }
@@ -172,10 +171,10 @@
       "daily-notes:Open today's daily note": false
     }
   },
-  "active": "99385adb150d1150",
+  "active": "64cc944f678ab3ae",
   "lastOpenFiles": [
-    "CCN/notes/notes.md",
     "CCN/notes/CCN ISA1 QB.md",
+    "CCN/notes/notes.md",
     "CCN/resources_from_prof/U1QA.pdf",
     "CCN/resources_from_prof/Tutorials_CN_2 (1).pdf",
     "Tutorials_CN_2 (1).pdf",
