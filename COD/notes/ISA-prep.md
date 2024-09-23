@@ -18,6 +18,7 @@ The # 5 represents the gen. of the arch.
 
 # 5 Great Ideas
 ## Make the common case *Fast*
+^5413e7
 ^7c7084
 ^79f7c8
 The Load & Store comp. arch. separates instructions into:
@@ -70,7 +71,7 @@ The Single Cycle contains 5 Stages which are namely:
 ## Why not more than 2 variables??
 - Conforms to the philosophy of keeping the HW simple: hw for a variable number of operands is more complicated than hw for a fixed number.
 - The situation illustrates the 1st of 3 underlying principles of hw designs:
-## Design Principle 1: Simplicity favours Regularity.
+# Design Principle 1: Simplicity favours Regularity.
 Operations of the Computer
 ### HW
 - Relationship of programs written in the higher lvl progamming langs to programs in this more primitive notation.
@@ -128,12 +129,34 @@ The RISC-v convention is x followed by number of the register except for a few r
 	- Func. Args./return values
 	- Pointers: stack, global, thread
 
-### Data types
-#### Double word 
+### Memory Operands
+Mem. is just a large 1D array of data, with the address acting as the index values of that array, starting with/at 0.
+Mem. loca. are addressed to access the data.
+Complex data structures might exceed the number of registers available on the hw & a large mem. is slow.
+
+#### Word Addressable
+Each 32 bit word has a unique address. Using this the 32-bits can be read/ written, and the successive loca. can be access as well.
+These can be read for individual bytes making it so that we hv many more data types and ways to manipulate it.
+That is to say the mem is byte addressable.
+
+#### Why Byte addressable mem.?
+This is done to increase the efficacy of the mem. devices. If a word addressable mem. is used in a system where processor supports data types like byte, half word, word & double word. Byte and half word occupy their respective sizes in the mem. portion and through offset values on the mem. address we can get these values again from mem.
+
+#### What is byte-addressable mem?
+- Each data byte has a unique address(Individual bytes have individual addresses). 
+
+#### How is mem. addressed?
+PA = BA + Offset = BA + Index x size of data type in terms of bytes
+##### Data types
+###### Double word 
 it is 64 bits long or 8 bytes 
-#### Word 
+###### Word 
 it is 32 bits long or 4 bytes
-#### Half word
+###### Half word
 it is 16 bits long or 2 bytes
-#### Byte
+###### Byte
 it is 8 bits wide or one byte
+
+#### How RISC-V represent & access such large structures?
+- Risc-v supports the load-store comp. arch[[#^5413e7]]
+- 

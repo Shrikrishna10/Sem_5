@@ -14,6 +14,19 @@ MAC -> Media Access Control
 
 QoS -> Quality of Service
 
+HTTP -> Hyper Text Transfer Protocol
+HTML -> Hyper Text Markup Language
+URL -> Uniform Resource Locator
+CDN -> Content Delivery Networks
+DNS-> Domain Name Server
+BIND -> Berkeley Internet Name Domain
+UDP ->User Datagram Protocol
+TLD -> Top Level Domain
+SMTP -> Simple Mail Transfer Protocol
+ASCII -> American Standard Code of International Interchange
+DASH -> Dynamic Adaptive Streaming over HTTP
+RDT -> Reliable Data Transfer 
+
 
 # What is a Network?
 A network is simply defined as an arrangement of intersecting horizontal and vertical lines.
