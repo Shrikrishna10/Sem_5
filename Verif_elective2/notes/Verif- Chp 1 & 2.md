@@ -2,6 +2,16 @@ the job of the compiler is to assign the required data for the code to run
 verilog has no dynamic arrays
 sv has dynamic arrays
 
+# What is the Goal of Verification?
+The goal of verification is not only to find bugs in the system but also:
+- Goal of hw design: To create a device that performs a particular task such as a DVD player, network router, or radar signal processor, based on a design specification.
+- Purpose as a verification engineer: To make sure the device can accomplish that task successfully. i.e.
+	- the design is an accurate representation of the specification.
+	- the behaviour of the device, when used outside of its original purpose, is not your responsibility, although you need to know where those boundaries lie.
+
+## The Process of verification parallels the design creation process
+
+
 # SV Data Types
 
 There are 3 directions in SV they are input output and inout

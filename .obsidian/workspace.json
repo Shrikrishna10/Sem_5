@@ -4,51 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "ab72d6a9cdc8d7de",
+        "id": "5aaac5b8f6df3733",
         "type": "tabs",
         "children": [
           {
-            "id": "6ad1915fdecd3be5",
+            "id": "ae34dc5a6f015525",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "COD/resources_from_prof/ISA1/COD_RISCV_ Unit 1.pdf"
+                "file": "Verif_elective2/resources_from_prof/ISA1/Chapter 1.pdf"
               }
             }
           }
         ]
       },
       {
-        "id": "ba7cedb8db7aedc9",
+        "id": "60d641780fdef409",
         "type": "tabs",
         "children": [
           {
-            "id": "64cc944f678ab3ae",
+            "id": "ef6288d69cb0c54d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COD/notes/COD.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2b43ee552c9e3d25",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "COD/notes/ISA-prep.md",
+                "file": "Verif_elective2/notes/Verif- Chp 1 & 2.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -101,6 +88,16 @@
               "type": "mk-path-view",
               "state": {}
             }
+          },
+          {
+            "id": "5fba6d78edfe3b1a",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Verif_elective2/resources_from_prof/ISA1/Chapter 1.pdf"
+              }
+            }
           }
         ],
         "currentTab": 3
@@ -124,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COD/notes/ISA-prep.md",
+                "file": "Verif_elective2/notes/Verif- Chp 1 & 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COD/notes/ISA-prep.md",
+                "file": "Verif_elective2/notes/Verif- Chp 1 & 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "COD/notes/ISA-prep.md"
+                "file": "Verif_elective2/notes/Verif- Chp 1 & 2.md"
               }
             }
           }
@@ -188,17 +185,26 @@
       "daily-notes:Open today's daily note": false
     }
   },
-  "active": "2b43ee552c9e3d25",
+  "active": "ef6288d69cb0c54d",
   "lastOpenFiles": [
-    "COD/resources_from_prof/ISA1/COD_RISCV_ Unit 1.pdf",
+    "Verif_elective2/resources_from_prof/ISA1/Chapter 1.pdf",
+    "Verif_elective2/notes/Verif- Chp 1 & 2.md",
+    "Verif_elective2/Verif_elective2.md",
+    "Verif_elective2/notes/Verif-Chp 5.md",
+    "Verif_elective2/resources_from_prof/ISA1/Chapter 4.pdf",
+    "Verif_elective2/resources_from_prof/1. Chris Spear, Greg Tumbush (auth.) - SystemVerilog for Verification_ A Guide to Learning the Testbench Language Features-Springer US (2012) (2).pdf",
+    "Verif_elective2/resources_from_prof/UE21EC343AB5 VERIFICATION OF DIGITAL SYSTEMS_Syllabus.pdf",
+    "Verif_elective2/resources_from_prof/ISA1/UE21EC343AB5 VERIFICATION OF DIGITAL SYSTEMS_Syllabus.pdf",
+    "Verif_elective2/resources_from_prof/ISA1/Chapter 5 OOP.pdf",
+    "Verif_elective2/resources_from_prof/ISA1/Chapter 3 .pdf",
+    "Verif_elective2/resources_from_prof/ISA1/Chapter 2 Data Types in SV.pdf",
+    "Verif_elective2/resources_from_prof/ISA1/2. Chapter 5 PPTs.pdf",
+    "Verif_elective2/resources_from_prof/ISA1/1.VDS - Chapter 1.pptx.pdf",
     "COD/notes/ISA-prep.md",
     "COD/notes/COD.md",
     "CCN/notes/CCN-self.md",
     "CCN/notes/CCN ISA1 QB.md",
     "CCN/notes/notes.md",
-    "CCN/resources_from_prof/U1QA.pdf",
-    "CCN/resources_from_prof/Tutorials_CN_2 (1).pdf",
-    "Tutorials_CN_2 (1).pdf",
     "Screenshots/Pasted image 20240921191820.png",
     "Screenshots/Pasted image 20240921190036.png",
     "Screenshots/Pasted image 20240921182449.png",
@@ -211,18 +217,10 @@
     "Screenshots/Pasted image 20240921115748.png",
     "CCN/CCN.md",
     "Vault.md",
-    "CCN/resources_from_prof/U1QB2.pdf",
-    "CCN/resources_from_prof/U1QB1.pdf",
     "Excalidraw/Drawing 2024-09-22 09.42.19.excalidraw.md",
-    "Verif_elective2/resources_from_prof/2. Chapter 5 PPTs.pdf",
-    "Verif_elective2/notes/Verif- Chp 1 & 2.md",
     "fold all.md",
-    "Verif_elective2/notes/Verif-Chp 5.md",
-    "Verif_elective2/resources_from_prof/1. Chris Spear, Greg Tumbush (auth.) - SystemVerilog for Verification_ A Guide to Learning the Testbench Language Features-Springer US (2012) (2).pdf",
     "selflearning/RISC-V LDF110.md",
     "Verif_elective2/notes/Verif.md",
-    "Screenshots",
-    "screenshots",
     "2024-09-20.md",
     "COD/notes/Processor.md",
     "COD/notes/Computer Organisation and Design.md",
@@ -230,7 +228,6 @@
     "LIC_elective1/ISA1_resources/LIC_Excalidraw.md",
     "LIC_elective1/ISA1_resources/LIC.md",
     "COD/self/Revision for ISA-1 - COD.md",
-    "Verif_elective2/Verif_elective2.md",
     "Verif_elective2/notes/Verif-Chp 3.md",
     "COD/Revision for ISA-1 - COD.md",
     "TO-DO.md",
