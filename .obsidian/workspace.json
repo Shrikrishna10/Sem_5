@@ -20,11 +20,11 @@
         ]
       },
       {
-        "id": "60d641780fdef409",
+        "id": "6ca814ecaea4054d",
         "type": "tabs",
         "children": [
           {
-            "id": "ef6288d69cb0c54d",
+            "id": "174a3ecb0ade69b4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Verif_elective2/notes/Verif- Chp 1 & 2.md",
+                "file": "Verif_elective2/notes/ISA checklist.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Verif_elective2/notes/Verif- Chp 1 & 2.md",
+                "file": "Verif_elective2/notes/ISA checklist.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Verif_elective2/notes/Verif- Chp 1 & 2.md"
+                "file": "Verif_elective2/notes/ISA checklist.md"
               }
             }
           }
@@ -185,11 +185,50 @@
       "daily-notes:Open today's daily note": false
     }
   },
+  "floating": {
+    "id": "f1061229106880b6",
+    "type": "floating",
+    "children": [
+      {
+        "id": "3e6ebd9ac085cee3",
+        "type": "window",
+        "children": [
+          {
+            "id": "3edfd6c16695d2ec",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "ef6288d69cb0c54d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Verif_elective2/notes/ISA checklist.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 0,
+        "y": 32,
+        "width": 800,
+        "height": 868,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
   "active": "ef6288d69cb0c54d",
   "lastOpenFiles": [
-    "Verif_elective2/resources_from_prof/ISA1/Chapter 1.pdf",
     "Verif_elective2/notes/Verif- Chp 1 & 2.md",
+    "Verif_elective2/notes/ISA checklist.md",
+    "Verif_elective2/resources_from_prof/ISA1/Chapter 1.pdf",
     "Verif_elective2/Verif_elective2.md",
+    "Untitled.md",
     "Verif_elective2/notes/Verif-Chp 5.md",
     "Verif_elective2/resources_from_prof/ISA1/Chapter 4.pdf",
     "Verif_elective2/resources_from_prof/1. Chris Spear, Greg Tumbush (auth.) - SystemVerilog for Verification_ A Guide to Learning the Testbench Language Features-Springer US (2012) (2).pdf",
@@ -229,8 +268,6 @@
     "LIC_elective1/ISA1_resources/LIC.md",
     "COD/self/Revision for ISA-1 - COD.md",
     "Verif_elective2/notes/Verif-Chp 3.md",
-    "COD/Revision for ISA-1 - COD.md",
-    "TO-DO.md",
-    "Verif_elective2/notes/Arbiter.md"
+    "COD/Revision for ISA-1 - COD.md"
   ]
 }

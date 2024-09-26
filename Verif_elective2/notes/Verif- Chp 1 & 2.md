@@ -1,4 +1,4 @@
-the job of the compiler is to assign the required data for the code to run
+[the job of the compiler is to assign the required data for the code to run
 verilog has no dynamic arrays
 sv has dynamic arrays
 
@@ -12,6 +12,9 @@ The goal of verification is not only to find bugs in the system but also:
 ## The Process of verification parallels the design creation process
 
 
+# Testing at Different Levels
+- To simulate a single design block, you need to create tests that generate stimuli from all the surrounding blocks - a difficult chore.
+- 
 # SV Data Types
 
 There are 3 directions in SV they are input output and inout
