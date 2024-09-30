@@ -299,6 +299,8 @@ Branches #todo #search
 
 signed 13-bits are stored in 12 bits how? #search #todo #important 
 
+#important typical one marker is to ask which stage or ---- is idle
+
 ## Addressing in Branches
 - RISC-v branch instructions use an RISC-v instruction format with a 12-bit immediate. This format can represent branch addresses from -4096 to 4094, in multiples of 2 as it is only possible to branch to even addresses.
 bne x10, x11, 2000 ; rs1=x10, rs2= x11 & imm[12:0] = 0x7D0= 0 0111 1101 000 ==0==
@@ -345,7 +347,7 @@ the above instruction
 for(i=0;i<10; i++)
 { c[i] = a[i] +b[i]}
 
-
+W
 # Instruction for Making Decisions
 
 the instruction is similar to an **if statement with a go-to.**
