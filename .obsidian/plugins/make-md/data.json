@@ -47,11 +47,8 @@
     "/",
     "//COD/COD/lab/COD/lab/Lab4",
     "//CCN/CCN/lab/CCN/lab/Lab4",
-    "//LIC_elective1/LIC_elective1/ISA1_resources",
-    "//Excalidraw",
-    "//COD",
-    "//COD/COD/resources_from_prof",
-    "//COD/COD/resources_from_prof/COD/resources_from_prof/ISA1"
+    "//COD/COD/resources_from_prof/COD/resources_from_prof/ISA1",
+    "//COD"
   ],
   "expandFolderOnClick": true,
   "menuTriggerChar": "/",

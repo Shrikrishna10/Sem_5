@@ -711,3 +711,12 @@ Missed quite a few things #todo #search
 
 >[!Solution]
 >
+
+
+# ISA ans 
+1 a. was done in class
+1 b. while loop for subroutine with jal and jalr
+1 c. write the control signals that is used in lw instruction- no instruction in fetch n decoder stage
+![[Control signals.png]]
+1 d. Hazards
+
