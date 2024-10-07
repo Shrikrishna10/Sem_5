@@ -22,3 +22,43 @@ https://www.perplexity.ai/search/what-are-the-different-hazards-Cjp8lLXtRdKOiraL
 Hardware soln.  
 
 # Exceptions
+
+
+# Case Study of Eg:
+
+We will start with single cycle rv32
+## Single Cycle RV32
+```asm
+addi x5, x0, 0x5A
+addi x7, x5, 0x5A
+```
+
+
+## W/o Forwarding / Hazard Detection
+
+
+
+
+
+
+
+
+
+## Table
+```asm
+addi x5, x0, 0x5A
+addi x7, x5, 0x5A
+```
+
+| Processor                                  | # of Instructions | # of clock cycles taken | CPI | IPC | Ideal case | Comments                                                                |
+| ------------------------------------------ | ----------------- | ----------------------- | --- | --- | ---------- | ----------------------------------------------------------------------- |
+| Single cycle                               | 2                 | 2                       | 1   | 1   | x          | No dependency issues                                                    |
+| 5 Stage w/o Forwarding / hazard detection  | 2                 | 6                       | 6/2 | 1/3 | 6          | Result is wrong: ex hazard                                              |
+| 5 Stage w/o Forwarding / hazard detection  | 4                 | 8                       | 8/4 | 1/2 | 5+(4-1)    | Ex Hazard is managed by introducing 2 nop                               |
+| 5 Stage w/o Forwarding Unit                | 2+2 stalls        | 8                       | 8/2 | 1/2 | 8          | Ex Hazard is managed by the system, using hardware approach of stalling |
+| 5 Stage w/o Hazard detection               | 2                 | 6                       | 6/2 | 1/3 | 6          | Ex hazard dealt with forwarding                                         |
+| 5 Stage with Forwarding & Hazard detection | 2                 | 6                       | 6/2 | 1/3 | 6          | Ex hazard dealt with forwarding                                         |
+
+>[!Note]
+>The hazard detector in ripes simulator is taking care of resolving all types of data dependency by introducing nop
+
