@@ -17,7 +17,8 @@ made some basic ALU 1 bit MUX 4 bits for 2 inputs and a REG for 4 bits
 
 # TO-DO
 - [x] Mux
+- [x] Register - for PC
+- [x] Adder
+- [ ] Memory
 - [ ] ALU
-- [ ] Adder
-- [ ] Register - for PC
 - [ ] Decoder
