@@ -13,24 +13,36 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COD/notes/Processor.md",
+                "file": "Verif_elective2/notes/Verif -6.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4fc1a77d6186c345",
+            "id": "c8ee849f914e1a1d",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "pdf",
               "state": {
-                "file": "LIC_elective1/ISA2/LIC_U3&4.excalidraw.md"
+                "file": "Verif_elective2/resources_from_prof/1. Chris Spear, Greg Tumbush (auth.) - SystemVerilog for Verification_ A Guide to Learning the Testbench Language Features-Springer US (2012) (2).pdf"
+              }
+            }
+          },
+          {
+            "id": "345dc87719a4515d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Postcatch fill in required Verif.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -99,7 +111,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 399.5110321044922,
+    "width": 302.5,
     "collapsed": true
   },
   "right": {
@@ -116,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LIC_elective1/ISA2/LIC_U3&4.excalidraw.md",
+                "file": "Postcatch fill in required Verif.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LIC_elective1/ISA2/LIC_U3&4.excalidraw.md",
+                "file": "Postcatch fill in required Verif.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LIC_elective1/ISA2/LIC_U3&4.excalidraw.md"
+                "file": "Postcatch fill in required Verif.md"
               }
             }
           }
@@ -180,14 +192,21 @@
       "daily-notes:Open today's daily note": false
     }
   },
-  "active": "4fc1a77d6186c345",
+  "active": "345dc87719a4515d",
   "lastOpenFiles": [
+    "Postcatch fill in required Verif.md",
+    "Verif_elective2/notes/Verif -6.md",
+    "Verif_elective2/resources_from_prof/1. Chris Spear, Greg Tumbush (auth.) - SystemVerilog for Verification_ A Guide to Learning the Testbench Language Features-Springer US (2012) (2).pdf",
+    "Pasted image 20241009083542.png",
+    "Excalidraw/randc_variable.png.png",
+    "Verif_elective2/notes/Untitled 1.md",
+    "Verif_elective2/notes/Verif.md",
     "COD/notes/Processor.md",
     "LIC_elective1/ISA2/LIC_U3&4.excalidraw.md",
     "COD/notes/COD ISA-2.md",
     "Tags",
     "COD/notes/COD ISA-1.md",
-    "Control signals.png",
+    "Screenshots/Control signals.png",
     "COD/COD.md",
     "CCN/lab/Lab 7.pdf",
     "Excalidraw/LIC_U3&4.excalidraw.md",
@@ -202,8 +221,6 @@
     "Screenshots/Pasted image 20240921182041.png",
     "Screenshots/Pasted image 20240921120626.png",
     "Screenshots/Pasted image 20240921120600.png",
-    "Screenshots/Pasted image 20240921120418.png",
-    "Screenshots/Pasted image 20240921120153.png",
     "COD/notes/9-08-24 The Processor.md",
     "Verif_elective2/notes/ISA checklist.md",
     "Verif_elective2/notes/Verif- Chp 1 & 2.md",
@@ -212,7 +229,6 @@
     "Verif_elective2/Verif_elective2.md",
     "Verif_elective2/notes/Verif-Chp 5.md",
     "Verif_elective2/resources_from_prof/ISA1/Chapter 4.pdf",
-    "Verif_elective2/resources_from_prof/1. Chris Spear, Greg Tumbush (auth.) - SystemVerilog for Verification_ A Guide to Learning the Testbench Language Features-Springer US (2012) (2).pdf",
     "Verif_elective2/resources_from_prof/UE21EC343AB5 VERIFICATION OF DIGITAL SYSTEMS_Syllabus.pdf",
     "Verif_elective2/resources_from_prof/ISA1/UE21EC343AB5 VERIFICATION OF DIGITAL SYSTEMS_Syllabus.pdf",
     "COD/notes/ISA-prep.md",
@@ -223,9 +239,6 @@
     "Vault.md",
     "Excalidraw/Drawing 2024-09-22 09.42.19.excalidraw.md",
     "fold all.md",
-    "selflearning/RISC-V LDF110.md",
-    "Verif_elective2/notes/Verif.md",
-    "2024-09-20.md",
-    "COD/notes/Computer Organisation and Design.md"
+    "selflearning/RISC-V LDF110.md"
   ]
 }
