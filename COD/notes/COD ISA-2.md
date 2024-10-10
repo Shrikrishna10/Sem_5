@@ -135,3 +135,100 @@ There are 3 different Privi lvls:
 
 
 All cores have machine mode
+
+
+## Direct & Vectored Mode of TRAP Handling
+### Steps involved in Exception/ Interrupt Handling #important 
+- The processor completes the execution of the inst. which are in mem. access stage & WB stage
+- It flushes the inst. with the help of control unit & control status register, which are present in Ex, ID & IF stage,
+- SEPC & SCAUSE get updated due to the unexpected event where:
+	- SEPC is loaded with the address of the inst. which is there in Ex stage, 
+	- SCAUSE gets updated indicating the cause of TRAPPING
+- The control of execution moves from main program to the trap handler using: 
+	- Direct Approach: PC = base address of handler
+	- Vectored Approach PC = base address of handler + 4* Index of exception code from vector table
+- The flow of control will return to the main program if it is restart-able, by completing the following:
+	- Use SEPC to return to the program, SEPC = PC
+- otherwise the code is terminated, report errors using CSR register.
+
+
+### Two modes used for TRAP Handling
+
+exception code helps to identify the type of exception
+
+#### Method 1: Direct Mode
+
+mtvect: Machine TRAP Vector Register
+
+
+| mtvect [31:2]                                         | mtvect[1:0]                                                                        |
+| ----------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Base address [31:2]                                   | Mode                                                                               |
+| Base address gives the of the Directed/ vectored Mode | Here above the Mode can be:<br>- 0x0 Direct<br>- 0x1 Vectored<br>- >= 0x2 Reserved |
+
+
+##### scause / mcause register
+
+Mcause: When an exception/interrupt happens, the hw sets the mcause register with the corresponding exception code.
+- The pc is set to the trap handler base address
+- The exception code helps to identify the type of exception.
+
+
+>[!Question]
+>1. Assume there is a illegal inst. getting executed, what will be the value in scause, refer to the table for exception code?
+>	- Ans ->code 2
+>
+>2. If the scause MSB is 1 what does it mean? what is the cause for the trap?
+>	1. **Interrupt**
+>	2. Exception
+>	3. Both
+>	4. None
+
+>[!Note]
+>There is no instruction to update the scpc.
+
+#### Method 2: Vectored Interrupts
+
+
+
+
+>[!Note]
+>- In case of direct mode all synchronous exceptions and asynchronous interrupts TRAP to the base address defined in the empty vector register
+>- Once the control of execution changes from TRAP handler, the SW must read the scause/ mcause register to determine what triggered the TRAP.
+>  - The Supervisor Exception Cause Register or SCAUSE/ Machine cause Register MCAUSE are the register used depending on privi mode, to identify the reason for the exception
+
+### Exception/ Interrupt CSR Registers
+Global enable & disable.
+- Each of the timer, sw, & external interrupts can be enabled individually.
+- Globally, all the interrupts can be enabled/ disabled using the MIE bit in the SSTATUS/MSTATUS register. 
+- MIE -> Machine Interrupt Enable register:
+	this is individually there for all the timer, sw & external interrupts
+	- MTIE
+	- MSIE
+	- MEIE
+- MIP register -> Machine Interrupt Pending register, The bits in mip indicates which interrupts TRAPs pending to be served. MEIP is read-only in mip & is set & cleared by a platform specific controller.
+
+>[!Note]
+>- MIE -> 
+>This MIE register is globally enabled/ disabled by using MIE bit in a SSTATUS/MSTATUS
+>If there are more than 1 exceptions/ interrupts available then there is a high chance of more than 1 trapping the processor, in this case the processor is going to check the priority of the interrupt or exception to service 1st. The rest of the services or interrupts will be the pending traps to be serviced later. These pending exceptions or interrupts will be updated in a register called MIP.
+
+>[!Question]
+>Consider the program given: 
+>40: sub x11, x2, x4
+>44: and
+>48: or
+>4c: add
+>50: sub
+>54: lw
+>
+>Assume the inst. are being executed on a 5 stage pipelined processor, show what happens in the program if a hw malfunction & the add inst is in the Ex stage of the pipeline to be invoked on an exception
+>1. What will be content of SEPC & scause?
+>2. where the control of execution transfer?(new value of PC)
+>3. which are the inst. in the pipeline which will be getting flushed & which gets executed?
+
+>[!Solution]
+>1. SEPC will hold the value of 4c
+>2. the new value of is 
+>3. the 1st inst. is already completed, the 2nd & 3rd are in the mem. access & WB stage, while the rest of the code is flushed.
+

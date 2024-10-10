@@ -11,9 +11,11 @@
             "id": "c8ee849f914e1a1d",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "LIC_elective1/ISA2/LIC_U3&4.excalidraw.md"
+                "file": "COD/notes/COD ISA-2.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -103,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LIC_elective1/ISA2/LIC_U3&4.excalidraw.md",
+                "file": "COD/notes/COD ISA-2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LIC_elective1/ISA2/LIC_U3&4.excalidraw.md",
+                "file": "COD/notes/COD ISA-2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LIC_elective1/ISA2/LIC_U3&4.excalidraw.md"
+                "file": "COD/notes/COD ISA-2.md"
               }
             }
           }
@@ -169,7 +171,9 @@
   },
   "active": "c8ee849f914e1a1d",
   "lastOpenFiles": [
+    "Excalidraw/COD_Interrupt flow.md",
     "COD/notes/COD ISA-2.md",
+    "LIC_elective1/ISA2/LIC_U3&4.excalidraw.md",
     "Verif_elective2/resources_from_prof/ISA1/Chapter 1.pdf",
     "Verif_elective2/resources_from_prof/1. Chris Spear, Greg Tumbush (auth.) - SystemVerilog for Verification_ A Guide to Learning the Testbench Language Features-Springer US (2012) (2).pdf",
     "Postcatch fill in required Verif.md",
@@ -179,7 +183,6 @@
     "Verif_elective2/notes/Untitled 1.md",
     "Verif_elective2/notes/Verif.md",
     "COD/notes/Processor.md",
-    "LIC_elective1/ISA2/LIC_U3&4.excalidraw.md",
     "Tags",
     "COD/notes/COD ISA-1.md",
     "Screenshots/Control signals.png",
