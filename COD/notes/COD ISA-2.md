@@ -232,3 +232,84 @@ Global enable & disable.
 >2. the new value of is 
 >3. the 1st inst. is already completed, the 2nd & 3rd are in the mem. access & WB stage, while the rest of the code is flushed.
 
+
+
+## Timer Interrupt
+- A timer interrupt is caused when a separate timer ckt indicates that a predetermined interval has ended
+- The timer subsystem will interrupt the current executing code.
+- These interrupts are handled by the OS which uses them to implement time sliced multi-threading.
+
+### Mtime 
+mtime register is a synchronous counter & it starts running form the time the processor is powered on & provides the current real-time in ticks
+
+### mtimecmp register
+- this register is used to store the time period after which a timer interrupt should happen.
+- the value of mtimecmp is compared with the mtime register.
+- when the mtime becomes greater than mtimecmp a timer interrupt happens
+- both the mtime & mtimecmp registers are 64-bit mem.-mapped registers
+
+>[!Question]
+>5. Assume there is an illegal instruction getting executed, what value will be updated in the scause register
+>    ![[Pasted image 20241014121952.png]]
+>	1. Interrupt bit = 1 & Exception Code= 2
+>	**2. Interrupt bit = 0 & Exception Code= 2**
+>	3. Interrupt bit = 0 & Exception Code= 1
+>	4. Interrupt bit = 1 & Exception Code= 4
+>6. If the scause MSB is 1 what is the cause for the trap?
+>	1. interrupt
+>	2. exception
+>	3. both
+>	4. none
+>7. Which of the following is not an exception
+>	1. system reset
+>	2. invoking the os from use program
+>	3. using undefined inst.
+>	4. I/O device request
+>8. Which of the following is either an Exception/ interrupt?
+>	1. I/O device request
+>	2. using undefined inst
+>	3. I/O device request
+>	4. Hw malfunctions
+>9. Interrupts are unexpected events that occurs
+>	1. Asynchronously inside
+>	2. synchronously inside
+>	3. Asynchronously outside
+>	4. none
+>10. which of the following modes has the highest privi?
+>	1. S-mode
+>	2. M-mode
+>	3. U-mode
+>	4. none
+>11. which of the following modes is a must to have in a RISC-v SOC?
+>	1. S-mode
+>	2. M-mode
+>	3. U-mode
+>	4. all
+>12. ecall is an inst used to
+>	1. switch between privi modes
+>	2. transfer control to debugger
+>	3. transfer control to subroutine
+>	4. none
+>13. in the case of the Vectored mode of trap handling, control of execution transfer to the handler by updating the PC with __
+>	1. VT_BaseAddress + 4 * Exception Code from scause
+>	2. VT_BaseAddress 
+>	3. VT_BaseAddress + Exception Code from scause
+>	4. none
+>14. in which of the following trap handlers the SEPC is copied into PC to restart the TRAPPED program
+>	1. user timer interrupt TRAP handler
+>	2. illegal inst trap handler
+>	3. inst addr. misaligned trap handler
+>	4. none
+>15. which timer register provides the current real time in ticks?
+>	1. mtimecmp
+>	2. mtime
+>	3. both
+>	4. none
+>16. which timer register is used to hold the initial count as reference wrt time period to generated 
+>	1. mtimecmp
+>	2. mtime
+>	3. both
+>	4. none
+>17. Under which of the following conditions the timer interrupt is invoked 
+>	1. mtime< mtimecmp
+>	2. 

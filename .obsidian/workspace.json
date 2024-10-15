@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "fa20df995ee9ca24",
+        "id": "cefa6e42689c4344",
         "type": "tabs",
         "children": [
           {
-            "id": "c8ee849f914e1a1d",
+            "id": "cda0861c0e84b031",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "COD/notes/COD ISA-2.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -66,16 +62,6 @@
             }
           },
           {
-            "id": "ab2be8f23f59a5bf",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Verif_elective2/resources_from_prof/ISA1/Chapter 1.pdf"
-              }
-            }
-          },
-          {
             "id": "5d59f051aad6de35",
             "type": "leaf",
             "state": {
@@ -84,7 +70,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -105,7 +91,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "COD/notes/COD ISA-2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +107,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "COD/notes/COD ISA-2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,9 +128,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "COD/notes/COD ISA-2.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -169,14 +151,16 @@
       "daily-notes:Open today's daily note": false
     }
   },
-  "active": "c8ee849f914e1a1d",
+  "active": "cda0861c0e84b031",
   "lastOpenFiles": [
+    "COD/resources_from_prof/ISA2/UNIT3_COD_Hazards_Exceptions.pdf",
+    "COD/notes/COD ISA-2.md",
+    "Pasted image 20241014121952.png",
+    "Verif_elective2/resources_from_prof/ISA1/Chapter 1.pdf",
     "COD/notes/MCQ - ISA2- COD.md",
     "Tags",
     "Excalidraw/COD_Interrupt flow.md",
-    "COD/notes/COD ISA-2.md",
     "LIC_elective1/ISA2/LIC_U3&4.excalidraw.md",
-    "Verif_elective2/resources_from_prof/ISA1/Chapter 1.pdf",
     "Verif_elective2/resources_from_prof/1. Chris Spear, Greg Tumbush (auth.) - SystemVerilog for Verification_ A Guide to Learning the Testbench Language Features-Springer US (2012) (2).pdf",
     "Postcatch fill in required Verif.md",
     "Verif_elective2/notes/Verif -6.md",
@@ -200,7 +184,6 @@
     "Screenshots/Pasted image 20240921182449.png",
     "Screenshots/Pasted image 20240921182041.png",
     "Screenshots/Pasted image 20240921120626.png",
-    "Screenshots/Pasted image 20240921120600.png",
     "COD/notes/9-08-24 The Processor.md",
     "Verif_elective2/notes/ISA checklist.md",
     "Verif_elective2/notes/Verif- Chp 1 & 2.md",
@@ -209,13 +192,11 @@
     "Verif_elective2/notes/Verif-Chp 5.md",
     "Verif_elective2/resources_from_prof/ISA1/Chapter 4.pdf",
     "Verif_elective2/resources_from_prof/UE21EC343AB5 VERIFICATION OF DIGITAL SYSTEMS_Syllabus.pdf",
-    "Verif_elective2/resources_from_prof/ISA1/UE21EC343AB5 VERIFICATION OF DIGITAL SYSTEMS_Syllabus.pdf",
     "COD/notes/ISA-prep.md",
     "CCN/notes/CCN-self.md",
     "CCN/notes/CCN ISA1 QB.md",
     "CCN/notes/notes.md",
     "CCN/CCN.md",
-    "Vault.md",
-    "Excalidraw/Drawing 2024-09-22 09.42.19.excalidraw.md"
+    "Vault.md"
   ]
 }
