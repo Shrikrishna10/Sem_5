@@ -313,3 +313,31 @@ mtime register is a synchronous counter & it starts running form the time the pr
 >17. Under which of the following conditions the timer interrupt is invoked 
 >	1. mtime< mtimecmp
 >	2. 
+>	   
+>	   
+>	   
+
+
+
+
+#todo # Missed 2 days worth of shit which needs to be covered
+
+
+# Pipelining
+
+
+
+# Parallelism
+
+## A C Sorting 
+
+
+
+# Array vs Pointers
+
+Why do we use **Pointers** in C programming?
+-> Every time we use the  Pointer we are referring to the memory address directly. 
+
+
+**Using pointers to clear the array** from the assembly equivalent code it is clear that the body of the for loop has 3 instructions as it moves the scaling shift & array bound edition outside the loop thereby reducing the inst. executed per inst. from 5 to 3.
+

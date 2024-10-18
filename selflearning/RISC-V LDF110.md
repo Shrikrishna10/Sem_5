@@ -1,6 +1,11 @@
 # Resources
 https://trainingportal.linuxfoundation.org/courses/introduction-to-risc-v-lfd110
 https://projectf.io/postas/riscv-cheat-sheet/
+https://riscv.org/wp-content/uploads/2019/06/riscv-spec.pdf
+http://riscvbook.com/
+http://riscvbook.com/greencard-20181213.pdf
+
+
 # Naming convention for RISC-V
 
 ## RV32IMAC 
@@ -16,7 +21,7 @@ https://projectf.io/postas/riscv-cheat-sheet/
 		- **D**: Double-precision floating-point operations.
 
 The image below is a graphical representation of the unprivileged RISC-V instructions set. 
-![[Pasted image 20240818071706.png]]
+![[RV32IMAC Instruction Set.png]]
 
 The image shows the Modular nature of the RISC-V. The mandatory base ISA is combined with a set of extensions.
 
@@ -129,6 +134,129 @@ Double-precision arithmetic is particularly important for scientific and enginee
 Again, many embedded applications do not require floating point logic, and hence these extensions are not part of the Base ISAs.
 
 ## C Extension
-The compressed instruction set extension is a clever addition to the RISC-V ISA, which provides an alternative 16-bit encoding for a special subset of existing instructions, reducing static and dynamic code size. 
+The compressed instruction set extension is a clever addition to the RISC-V ISA, which provides an alternative 16-bit encoding for a special subset of existing instructions, reducing static and dynamic code size. This doesn't replace the ones that are already there just gives us the option to save more memory
 
 
+
+The C extension is compatible with all other standard instruction extensions. These 16-bit instructions may be freely intermixed with 32-bit instructions. This means that any instruction can start on any 16-bit boundary. As such, with the addition of the C extension to any system, no instructions can raise instruction-address-misaligned exceptions.
+
+**Pseudo-instructions** are special instructions added to the assembly language to make programming less cumbersome. Pseudoinstructions have a direct translation to machine code, and are supported by assemblers and compiler toolchains.
+
+The C extension provides hardware support for specific versions of existing base ISA instructions.
+[[RV32IMAC Instruction Set.png]]
+
+Thus, one difference is that pseudo-instructions are a logical addition (software), whereas instructions from the c extension represent a logical and a physical addition (software and hardware).
+
+## More Extensions
+
+The open nature of RISC-V allows for a rich proliferation of other extensions that we will not cover. Here we have some examples:
+
+- The A extension, for Atomic Memory Operations
+- The Q extension, for quad-precision floating-point operation, introducing 128-bit wide floating point registers
+- The B extension, for bit manipulation
+- The S extension, for supervisor operation
+- The H extension, for hypervisor operation
+- The L extension, for decimal floating-point operation
+- The P extension, for Packed-SIMD instructions
+- The V extension, for vector operations
+- The Zicsr extension, for manipulating CSR registers
+- The Zifencei extension, for instruction memory synchronization
+
+Once again, this list is not exhaustive.
+
+Almost all of the above extensions are _ratified_, and only the L and P extensions are still under discussion, and thus _open_.
+
+# Unsupported Instructions
+Compilers are informed of the extensions included in the target CPU so that they can generate the best possible code. If the code contains an instruction from extensions that are missing in the physical CPU, the decoding of that instruction will trigger an illegal instruction exception. The software running on the CPU will have to handle this exception and take appropriate action, such as emulating the instruction or providing an alternative implementation, possibly from the standard library.
+
+# Instruction Encoding
+![[Instruction Format for RV32I.png]]
+
+The RV32I ISA specifies the following elements:
+
+- 1 32-bit wide Program Counter Register
+- 32 32-bit wide Registers named x0 to x31
+- 40 Unique 32-bit wide unprivileged Instructions in six different formats (R, I, S, B, U, J) but with some recurring fields:
+- A major opcode in the 7 least significant bits of the instruction, identifying the instruction.
+- Source registers (rs1 always in bits 15 to 19, rs2 in bits 20 to 24).
+- Destination register (rd in bits 7 to 11) fields.
+- Function fields, or minor opcodes, named _funct7_ or _funct3_ depending on their bit width. _Funct7_ occupies the last 7 bits of the R type instruction and _funct3_ always occupies bits 12 to 14.
+- Immediate fields, which always tend to be towards the end (left side) of the instruction and are encoded differently depending on the instruction type.
+- 24 additional unique 32-bit wide privileged instructions in two formats (R and I).
+
+## An Example and explaination:
+
+Instruction mnemonics are used in RISC-V assembly language to represent specific instructions in a more human-readable form. A mnemonic is a short string of letters that represents a specific instruction. 
+
+For example, in the instruction **"add x1, x2, x3"**, "**add**" is the mnemonic that represents the add instruction. Functionally, that instruction means “add the contents of **x2** with the contents of **x3**, and store the result in **x1**”.
+
+When an assembler encounters a mnemonic in the source code, it will use that mnemonic to translate the instruction into the corresponding machine code representation of the instruction, along with the encoding of the operands.
+
+For example, the instruction "**add x1, x2, x3**" is translated by the assembler into the machine code instruction **0x003100B3**. This long hexadecimal number can be extended to binary as follows:
+
+**0000 0000 0011 0001 0000 0000 1011 0011**
+![[ADD.png]]
+As shown above, these are the meanings of the bit fields in the encoded instruction:
+
+- **funct7**: **0000000**
+- **rs2**: **00011**, which means **x3**
+- **rs1**: **00010**, which means **x2**
+- **funct3**: **000**
+- **rd**: **00001**, which means **x1**
+- **opcode**: **0110011**, which means **add**
+
+Keep in mind that mnemonics are used for both instructions and pseudoinstructions, which the assembler converts to machine instructions.
+
+## Instruction Types
+### R-type: 
+Instructions are used for operations that involve two source registers and one destination register. They typically include arithmetic and logic operations, such as addition, subtraction, bitwise operations, and comparisons.
+
+### I-Type:
+Instructions are used for operations that involve an immediate value (a constant) and a source register. Common I-Type instructions include load operations as well as arithmetic operations with immediate values (e.g., **addi** for "add immediate").
+
+### S-Type:
+Instructions are a subset of I-Type instructions specifically used for storing data into memory. They involve a source register, an immediate offset, and a base address register to specify the memory location where the data is to be stored.
+
+### B-Type:
+Instructions are used for conditional branching operations. They compare two registers and, based on the result, determine whether to take a branch instruction or not. Common B-Type instructions include **beq** (branch if equal) and **bne** (branch if not equal).
+
+### U-Type:
+instructions are used for setting the upper bits of a register to a constant value, which is often used for initializing pointers or addresses. The U-Type instructions include **lui** (load upper immediate) and **auipc** (add upper immediate to PC).
+
+### J-Type:
+Instructions are used for unconditional jump operations. The jump instruction transfers control to a specified target address, like the **jal** (jump and link) instruction used for subroutine calls.
+
+# Immediates & Addresses:
+Other than opcodes and registers, any instruction encoding other than R-Type may contain immediates, that is a piece of data encoded directly in the instruction, rather than in memory or in a register. This data can represent either constants, to be used for example in arithmetic operations, or as memory addresses or offsets.
+
+Different handling of immediates is the exact characteristic that defines the instruction types, but all of them tend to encode the immediates in similar positions in order to simplify the implementation of the hardware immediate decoder. All immediates decode to 32-bit wide values, but encoding varies by instruction.
+
+# question
+![[Some important questions.png]]
+
+# Peculiar RISC-V Design Decisions
+- There are no Flags/Condition-Code Register
+- Register x0 is hardwired to 0
+- There is no way to specify a 32-imm in a single instruction.
+- There are no dedicated multiply / divide instruction in the base RISC-V ISA
+- There are lots of basic instruction missing 
+- There is no Stack Pointer.
+- There are no 'push' or 'pop' instructions
+- There are no subroutines 'call' or 'return' instructions
+
+# Introduction to Privileged Specification
+For most modern processors, the M-mode and S-mode is a must for certain applications. These modes have elevated privileges & are described in a complete separate document.
+
+![[PriviModes.png]]
+The diagram shows a virtual machine monitor configuration where multiple multiprogrammed operating systems are supported by a single hypervisor. Each OS communicates via a supervisor binary interface (SBI) with the hypervisor, which provides the supervisor execution environment (SEE). The hypervisor communicates with the hypervisor execution environment (HEE) using a hypervisor binary interface (HBI), to isolate the hypervisor from details of the hardware platform.
+
+Minimum lvl in the processor these days.
+
+
+# M-Mode
+M-mode is used for low-level access to a hardware platform and is the first mode entered at reset, when the processor finishes initializing and is ready to execute code. M-mode can also be used to implement features that are too difficult or expensive to implement in hardware directly. A good example of this would be a watchdog timer implemented in low level software (firmware) which helps the system recover from faults.
+
+## Non-Maskable Interrupts
+Non-maskable interrupts (NMIs) are only used for hardware error conditions. When fired, they cause an immediate jump to an NMI handler running in M-mode, regardless of how that hardware thread has its interrupt-enable bit set. In other words, that interrupt will be serviced without a way to block the service in configuration. Each NMI will have a “mcause” register associated with it. This allows implementations to decide how they wish to handle these interrupts and allows them to define many possible causes. NMIs do not reset processor state which enables diagnosis, reporting, and possible containment of the hardware error.
+
+## Physical Memory Attributes (PMAs)
