@@ -12,3 +12,11 @@ https://www.edaplayground.com/x/4Pp3 #edaplayground
 
 
 # Hierarchical randomization
+
+
+
+Missed a lot need to catch up now.
+
+# Functional Coverage
+Functional Coverage is a **user-defined metric** that measures how much of the design specification, as enumerated by features in the test plan, has been exercised.
+
